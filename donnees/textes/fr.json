@@ -39,7 +39,10 @@
     "appelAction": "Réserver une balade",
     "carteRegion": "Carte des parcours",
     "departEtiquette": "Départ",
-    "confidentialiteNote": "Politique de confidentialité : à compléter."
+    "confidentialiteNote": "Politique de confidentialité : à compléter.",
+    "rouleSouris": "Passez la souris, je roule",
+    "rouleDoigt": "Touchez la route, je roule",
+    "rejouer": "Rejouer le tracé"
   },
   "pages": {
     "accueil": {
@@ -207,6 +210,10 @@
       "c3Texte": "Les mobylettes sont couvertes par des assurances. On vous demande d'en prendre soin et de conduire de façon responsable.",
       "c4Titre": "Équipées",
       "c4Texte": "Casques et gants sont fournis avec chaque mobylette."
+    },
+    "mots": {
+      "a": "Solo · En couple · Entre amis ·",
+      "b": "Demi-journée · Mi-journée · Journée ·"
     }
   },
   "reserver": {

@@ -45,6 +45,7 @@ ${route(c, { variante: 'papier', forme: 1, classe: 'route--jonction' })}
       <p data-anime>${c.t('accueil.carte.texte')}</p>
       ${c.donnees.balades.filter((b) => b.etapes.length).map((b) => html`<article class="carte-boucle" data-boucle="${b.id}">
         <div class="carte-boucle-tete">${borne(c, b)}<h3>${b.nom}</h3></div>
+        <div class="boucle-avance" aria-hidden="true" data-visuel><span class="boucle-barre"><span data-boucle-barre></span></span><span class="boucle-km chiffres"><span data-boucle-km>0</span> / ${b.km} km</span></div>
         <ol class="etapes" data-anime="cascade">${b.etapes.map((e) => html`<li>${e}</li>`)}</ol>
         <p>${c.lien('reserver', { params: `balade=${b.id}`, classe: 'lien-fleche', texte: c.t('commun.reserverCette'), attrs: `aria-label="${c.s('commun.reserverCette')} : ${b.nom}"` })}</p>
       </article>`)}
@@ -62,7 +63,7 @@ ${route(c, { variante: 'papier', forme: 1, classe: 'route--jonction' })}
     <div><p data-anime>${c.t('accueil.mobs.texte')}</p><p data-anime>${c.lien('les-mobylettes', { classe: 'lien-fleche', texte: c.t('accueil.mobs.lien') })}</p></div>
   </div>
   <div class="rangee" data-rangee data-ruban data-effet="rangee" tabindex="0" role="region" aria-label="${c.s('accueil.mobs.region')}">
-    <div class="rangee-piste" data-rangee-piste>${c.donnees.galerie.filter((g) => !g.large).map((g) => html`<figure class="rangee-carte">
+    <div class="rangee-piste" data-rangee-piste>${c.donnees.galerie.filter((g) => !g.large).map((g) => html`<figure class="rangee-carte" data-fx="vitesse" data-fx-force="2.4">
       ${image(c, { nom: g.image, alt: c.donnees.imagesAlt[g.image], cadrage: g.cadrage, classe: 'rangee-media', sizes: '(max-width: 760px) 62vw, 26vw' })}
       <figcaption>${g.titre}</figcaption>
     </figure>`)}</div>
@@ -73,7 +74,7 @@ ${route(c, { variante: 'papier', forme: 1, classe: 'route--jonction' })}
   <div class="conteneur">
     <div class="section-tete">${surtitre(c, 'accueil.deroule.sur')}${titre(c, 'accueil.deroule.titre')}</div>
     <div class="deroule-ligne" aria-hidden="true" data-effet="progression" data-visuel><span data-progression></span></div>
-    <ol class="deroule-grille" data-anime="cascade">${etapes.map((e) => html`<li class="deroule-etape">
+    <ol class="deroule-grille" data-anime="cascade">${etapes.map((e) => html`<li class="deroule-etape" data-deroule-etape>
       <span class="deroule-n chiffres" aria-hidden="true">${e.n}</span>
       ${image(c, { nom: e.image, alt: c.donnees.imagesAlt[e.image.replace('grok/', '')], cadrage: e.cadrage, classe: 'deroule-media', sizes: '(max-width: 760px) 44vw, 22vw' })}
       <h3>${c.t(`accueil.deroule.e${e.n}Titre`)}</h3>

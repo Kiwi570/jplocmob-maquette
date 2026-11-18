@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,15 +35,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/polices/bricolage-grotesque-800.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/polices/instrument-sans-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/modules.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/modules.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F3EDDC">
 <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -134,6 +134,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </section>
 <section class="section section--papier2 parc" id="galerie">
+  <div class="mots-geants" data-fx="mots-geants" aria-hidden="true" data-ruban data-visuel data-audit-ignorer><p class="mots-rangee mots-rangee--0" data-fx-rangee>Solo · En couple · Entre amis · Solo · En couple · Entre amis · Solo · En couple · Entre amis ·</p><p class="mots-rangee mots-rangee--1" data-fx-rangee data-sens="-1">Demi-journée · Mi-journée · Journée · Demi-journée · Mi-journée · Journée · Demi-journée · Mi-journée · Journée ·</p></div>
   <div class="conteneur">
     <div class="section-tete"><p class="surtitre" data-anime>En images</p><h2 class="titre " data-anime="lignes">Les voici, <em>prêtes à partir</em></h2></div>
     <div class="parc-grille"><figure class="parc-carte parc-carte--0" data-anime>
@@ -208,8 +209,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur">
     <div class="section-tete"><p class="surtitre" data-anime>Les conditions</p><h2 class="titre " data-anime="lignes">À savoir <em>avant de louer</em></h2></div>
     <div class="conditions-grille" data-anime="cascade">
-      <article class="condition"><p class="condition-chiffre chiffres"><span data-compteur="18">18</span> <small>ans</small></p><p>La location est réservée aux personnes de plus de 18 ans.</p></article>
-      <article class="condition"><p class="condition-chiffre chiffres" data-prix><span data-compteur="600">600</span> <small>€</small></p><p>Caution demandée pour chaque mobylette.</p></article>
+      <article class="condition" data-survol="incline" data-survol-force="5"><p class="condition-chiffre chiffres"><span data-compteur="18">18</span> <small>ans</small></p><p>La location est réservée aux personnes de plus de 18 ans.</p></article>
+      <article class="condition" data-survol="incline" data-survol-force="5"><p class="condition-chiffre chiffres" data-prix><span data-compteur="600">600</span> <small>€</small></p><p>Caution demandée pour chaque mobylette.</p></article>
       <article class="condition"><h3>Assurées</h3><p>Les mobylettes sont couvertes par des assurances. On vous demande d&#39;en prendre soin et de conduire de façon responsable.</p></article>
       <article class="condition condition--image"><figure class="media condition-media" data-grok style="--cadrage:50% 50%">
   <picture>

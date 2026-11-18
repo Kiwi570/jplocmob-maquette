@@ -1,4 +1,4 @@
-# JP Loc Mob · maquette web (v1)
+# JP Loc Mob · maquette web (v2)
 
 Maquette du futur site de JP Loc Mob (location de mobylettes restaurées et balades en Isère, à Chèzeneuve), faite à partir du site actuel https://jplocmob.wordpress.com.
 Adresse de la maquette : https://jplocmob-maquette.vercel.app (à intégrer telle quelle dans le module Wix « Intégrer un site »).
@@ -50,11 +50,12 @@ Formules renommées pour éviter la confusion du site actuel entre « 1/2 journ�
 
 Les images du dossier `assets/images/grok/` sont des illustrations générées : route de campagne (accueil, manifeste), route sous le noyer (balade « Itinéraire libre »), coucher de soleil sur les collines (appel de l'accueil), collines (ouverture de Balades et tarifs), table de café (Les mobylettes), casque et gants (accueil et Les mobylettes), route au cabanon (404). Deux d'entre elles (table de café, casque et gants) ont été recadrées pour retirer des bandes floues ajoutées en haut et en bas. Chacune porte la mention « Illustration générée » : **à garder sur le site final**. Aucune ne montre un lieu réel ni une mobylette du client.
 
-## Audit de la v1 (17 novembre 2026)
+## Audit de la v2 (18 novembre 2026)
 
-- Audit standard final : 0 échec, 12 points à regarder, rapport dans `_audit/rapport/rapport.md`. Passe des formats (13 tailles, mesures et tient dans l'écran) : 0 échec après corrections.
+- Audit complet (13 tailles, tous les modes, toutes les pages) : 11 échecs au premier passage, tous venus de deux ajouts de la v2 (titres d'ouverture coupés par leur masque, contraste de la bulle de la mobylette), corrigés ; mesures relancées sur les 6 pages à toutes les tailles : 0 échec. Les autres étapes (films, bords, parcours, fluidité, mouvement, vitesse, captures) étaient sans échec au passage complet. Rapport de la dernière passe dans `_audit/rapport/rapport.md` ; rapport et captures de la passe complète dans `_audit/passes/20261118-143431-complet/`.
 - Non lancé : Safari (WebKit ne s'installe pas dans l'espace de travail). À vérifier sur le Mac : ouverture et rechargement de chaque page, voile entre les pages et retour arrière, défilement et en-tête, menu en mode iPhone, polices, images, formulaires et barre du bas.
-- Points à regarder gardés tels quels : sections sans image (composeur, questions sur téléphone, formulaire de contact : sections d'outil), « à compléter » dans la mention des deux formulaires (politique de confidentialité), photo de la page Réserver sous le formulaire sur téléphone, léger changement d'image au retour arrière.
+- Points à regarder gardés tels quels : sections d'outil sans photo (composeur, questions sur téléphone, formulaire de contact), « à compléter » dans la mention des deux formulaires (politique de confidentialité), photo de la page Réserver sous le formulaire sur téléphone, léger changement d'image au retour arrière et au rechargement en milieu de page.
+- v1 (17 novembre 2026) : audit standard et passe des formats, 0 échec.
 
 ## À la mise en ligne définitive
 

@@ -1,13 +1,16 @@
 {
- "id": "20261117-211208-standard",
- "date": "2026-11-17T21:27:29.830Z",
- "niveau": "standard",
- "pages": "toutes",
- "etapes": "toutes",
- "version": "1",
+ "id": "20261118-145744-complet-cible-partiel",
+ "date": "2026-11-18T15:03:26.693Z",
+ "niveau": "complet",
+ "pages": "/,/404,/balades-et-tarifs,/contact,/les-mobylettes,/reserver",
+ "etapes": [
+  "fichiers",
+  "mesures"
+ ],
+ "version": "2",
  "echecs": 0,
- "aRegarder": 12,
- "nonLances": 1,
+ "aRegarder": 6,
+ "nonLances": 0,
  "manquants": 0,
  "statut": "complet"
 }

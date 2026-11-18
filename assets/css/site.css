@@ -121,7 +121,7 @@ html.js:not(.secours):not([data-arrivee="retour"]) .borne[data-anime].vu { trans
 .hero-media { width: 100%; aspect-ratio: 4 / 3; max-height: min(66svh, 640px); border-radius: var(--rayon-grand); box-shadow: 0 30px 60px -30px rgba(31, 59, 48, .5); }
 .hero-route { position: absolute; left: 0; right: 0; bottom: clamp(4px, 2vh, 24px); z-index: 0; height: clamp(54px, 10vh, 110px); }
 .hero-route .route { height: 100%; }
-.route-mob { position: absolute; left: 0; top: 0; width: clamp(34px, 3.4vw, 50px); opacity: 0; pointer-events: none; }
+.route-mob { position: absolute; left: 0; top: 0; width: clamp(40px, 4vw, 58px); opacity: 0; pointer-events: none; }
 .route-mob svg { display: block; width: 100%; height: auto; overflow: visible; }
 .hero-grille, .tete-grille { position: relative; z-index: 1; }
 @media (max-width: 400px) { .hero-intro-suite { display: none; } .hero .surtitre { margin-bottom: .6em; } .hero-actions { margin-bottom: .8em; } }
@@ -465,3 +465,80 @@ html.js:not(.secours):not([data-arrivee="retour"]) .borne[data-anime].vu { trans
 
 /* 404. */
 .tete--introuvable .tete-media { aspect-ratio: 16 / 10; }
+
+/* ================= v2 : jeu, vie et finitions ================= */
+
+/* Le mot en couleur des titres roule sur une petite route qui se trace à son arrivée. */
+:root { --route-fond: var(--sapin); }
+.sombre, .appel, .pied { --route-fond: rgba(243, 237, 220, .26); }
+.titre em, .tete-titre em {
+  background-image: repeating-linear-gradient(90deg, var(--jaune) 0 .2em, transparent .2em .36em), linear-gradient(var(--route-fond), var(--route-fond));
+  background-repeat: no-repeat; background-position: 0 calc(100% - .038em), 0 100%; background-size: 0 .026em, 0 .1em;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  transition: background-size .95s cubic-bezier(.22, 1, .36, 1) .3s;
+}
+.titre.vu em, .tete-titre.est-pose em,
+:is(html.secours, html:not(.js), html[data-arrivee="retour"]) :is(.titre, .tete-titre) em { background-size: 100% .026em, 100% .1em; }
+
+/* La mobylette de l'ouverture se conduit : elle suit la souris le long de la route, ou file là où l'on touche. */
+.route-cadre { cursor: ew-resize; touch-action: pan-y; }
+.route-mob { z-index: 2; }
+.route-mob-dessin { display: block; transform-origin: 50% 88%; }
+.route-bulle { position: absolute; left: 50%; bottom: calc(100% + 8px); padding: .38em .85em; border-radius: 999px; background: var(--sapin); color: var(--papier); font-size: .8rem; font-weight: 600; line-height: 1.2; white-space: nowrap; opacity: 0; transform: translateX(-50%) translateY(6px) scale(.7); transform-origin: 50% 100%; transition: opacity .35s, transform .5s cubic-bezier(.34, 1.56, .64, 1); pointer-events: none; }
+.route-bulle::after { content: ""; position: absolute; left: 50%; top: 100%; margin-left: -5px; border: 5px solid transparent; border-top-color: var(--sapin); border-bottom: 0; }
+.route-bulle.est-la { opacity: 1; transform: translateX(-50%); }
+.route-bulle.est-partie { opacity: 0; transform: translateX(-50%) translateY(-6px) scale(.8); }
+.route-bulle::before { content: attr(data-texte-souris); }
+@media (hover: none) { .route-bulle::before { content: attr(data-texte-doigt); } }
+
+/* Plan vivant : les lieux s'allument au passage, les kilomètres comptent, le tracé se rejoue. */
+.plan-nom { transition: color .35s; }
+.plan-nom.est-passe:not(.plan-nom--depart) { color: var(--jaune); }
+.plan-point { transition: fill .35s; }
+.plan-point.est-passe:not(.plan-point--depart) { fill: var(--jaune); }
+.plan-km { position: absolute; left: 12px; bottom: 12px; display: flex; align-items: baseline; justify-content: space-between; gap: .8em; min-width: 12.5em; margin: 0; padding: .45em .9em; border-radius: 999px; background: var(--papier); color: var(--sapin); font-size: .84rem; font-weight: 600; line-height: 1.2; white-space: nowrap; }
+.plan-km strong { font-family: var(--police-titres); font-weight: 800; min-width: 3.6em; text-align: right; }
+.plan-note { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px 16px; }
+.plan-rejouer { min-height: 44px; padding: 0 1.1em; border: 1.5px solid currentColor; border-radius: 999px; background: none; color: inherit; font-size: .9rem; font-weight: 600; }
+.plan-rejouer:hover { background: var(--jaune); border-color: var(--jaune); color: var(--sapin); }
+:is(html.secours, html:not(.js)) :is(.plan-rejouer, .plan-km, .boucle-avance) { display: none; }
+@media (max-width: 520px) { .plan-km { min-width: 0; font-size: .8rem; left: 8px; bottom: 8px; } .plan-km [data-plan-nom] { display: none; } }
+.boucle-avance { display: flex; align-items: center; gap: 12px; margin: 0 0 14px; }
+.boucle-barre { flex: 1; height: 6px; border-radius: 3px; background: var(--ligne); overflow: hidden; }
+.boucle-barre span { display: block; height: 100%; background: var(--jaune); transform-origin: 0 50%; transform: scaleX(0); }
+.boucle-km { flex: none; min-width: 6.4em; text-align: right; font-size: .9rem; font-weight: 600; }
+.carte-boucle h3 { transition: color .35s; }
+.carte-boucle.est-active h3 { color: var(--jaune); }
+
+/* Les mobylettes se rangent : autant d'allumées que de mobylettes choisies. */
+.rang-mobs { display: flex; align-items: flex-end; gap: 7px; margin: 0; }
+.rang-mob { width: clamp(30px, 3vw, 40px); opacity: .22; transform: translateY(3px) scale(.86); transition: transform .5s cubic-bezier(.34, 1.56, .64, 1), opacity .3s; }
+.rang-mob svg { display: block; width: 100%; height: auto; overflow: visible; }
+.rang-mob.est-la { opacity: 1; transform: none; }
+.rang-mob:nth-child(2) { transition-delay: .04s; } .rang-mob:nth-child(3) { transition-delay: .08s; } .rang-mob:nth-child(4) { transition-delay: .12s; } .rang-mob:nth-child(5) { transition-delay: .16s; }
+.bon .rang-mobs { margin: 0 0 12px; }
+
+/* Déroulé : chaque étape s'allume quand le trait l'atteint. */
+.deroule-n { transition: background-color .35s, color .35s, border-color .35s, transform .5s cubic-bezier(.34, 1.56, .64, 1); }
+.deroule-etape.est-faite .deroule-n { background: var(--accent); border-color: var(--accent); color: #fff; transform: scale(1.12) rotate(-6deg); }
+
+/* Mots géants (page Les mobylettes). */
+.parc { overflow: hidden; overflow: clip; }
+.mots-geants { margin: calc(-1 * clamp(10px, 2vw, 28px)) 0 clamp(26px, 4vw, 60px); }
+.mots-rangee { font-family: var(--police-titres); font-weight: 800; font-size: clamp(3rem, 9.4vw, 8.6rem); line-height: 1.02; letter-spacing: -.03em; color: var(--sapin); }
+.mots-rangee--1 { font-size: clamp(2rem, 5.6vw, 5rem); color: var(--accent-fonce); margin-top: .08em; }
+
+/* Curseur (souris seulement) et petites réactions au survol. */
+.curseur { border-color: var(--jaune); box-shadow: 0 0 0 1.5px rgba(31, 59, 48, .6); }
+.curseur.curseur-lien { background: rgba(242, 182, 50, .22); }
+.carte-balade-media img, .pause-media img, .rangee-media img, .balade-photo img { transition: transform .9s cubic-bezier(.22, 1, .36, 1); }
+.carte-balade:hover .carte-balade-media img, .pause:hover .pause-media img, .rangee-carte:hover .rangee-media img, .balade-photo:hover img { transform: scale(1.05); }
+[data-nav] a { position: relative; }
+[data-nav] a:not([aria-current])::after { content: ""; position: absolute; left: 0; right: 0; bottom: 9px; height: 2px; background: var(--accent); transform: scaleX(0); transform-origin: 0 50%; transition: transform .35s cubic-bezier(.22, 1, .36, 1); }
+[data-nav] a:not([aria-current]):hover::after { transform: scaleX(1); }
+.question summary:hover i { background: var(--accent); }
+.borne-lien:hover .borne { transform: translateY(-3px) rotate(-3deg); }
+.condition { transition: background-color .3s; }
+.condition:hover { background: #315847; }
+.appel:not(.appel--photo) { padding-bottom: clamp(120px, 15vw, 210px); }
+.cdf__recap p { margin: 0; }

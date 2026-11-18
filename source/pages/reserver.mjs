@@ -1,6 +1,6 @@
 /* Réserver : la demande de réservation simulée en étapes (module formulaire-par-etapes), le bon de sortie qui suit les choix. */
 import { html, brut } from '../../outils/gabarit.mjs';
-import { image, surtitre, titre, route } from '../gabarits/composants.mjs';
+import { image, surtitre, titre, route, rangMobs } from '../gabarits/composants.mjs';
 import { teteReserver } from '../gabarits/ouvertures.mjs';
 
 export const page = { cle: 'reserver', fichier: 'reserver', imagePartage: 'mob-bleue-herbe-1280.webp' };
@@ -106,6 +106,7 @@ export default (c) => {
           <div><dt>${c.t('reserver.ticket.formule')}</dt><dd data-bon-formule>${c.t('reserver.ticket.vide')}</dd></div>
           <div><dt>${c.t('reserver.ticket.mobs')}</dt><dd class="chiffres" data-bon-mobs>2</dd></div>
         </dl>
+        ${rangMobs(F.mobsMax, 2)}
         <p class="bon-total"><span>${c.t('reserver.ticket.total')}</span><strong class="chiffres" data-bon-total data-prix data-vide>—</strong></p>
         <p class="bon-caution"><span>${c.t('reserver.ticket.caution')}</span><span class="chiffres" data-bon-caution>${F.caution * 2} €</span></p>
         <p class="bon-note">${c.t('reserver.ticket.note')}</p>

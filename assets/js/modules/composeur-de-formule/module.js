@@ -2,7 +2,7 @@
 // le détail du calcul se réécrit ligne par ligne et le total compte jusqu'à sa nouvelle valeur.
 // Les tarifs viennent uniquement des données : <script type="application/json" class="cdf__donnees"> dans la section,
 // ou options.donnees. Les clés sont les value des champs ; libellés et bornes restent dans le HTML.
-import { pret } from '../pont.js?v=1';
+import { pret } from '../pont.js?v=2';
 
 const TEXTES = {
   total: 'Total estimé',

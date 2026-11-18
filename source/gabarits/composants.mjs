@@ -61,7 +61,7 @@ export function route(c, { variante = 'papier', forme = 0, classe = '' } = {}) {
   <g mask="url(#${m})"><path class="route-bord" d="${d}" fill="none"/><path class="route-ligne" d="${d}" fill="none"/></g>
 </svg>`;
   /* Ouverture : la route se trace à l'arrivée, puis une petite mobylette la remonte toute seule (une fois, sans boucle). */
-  return entree ? html`<div class="${classe.replace('route--entree', '').trim()} route-cadre" data-audit-ignorer>${svg}<span class="route-mob" data-route-mob data-points="${JSON.stringify(echantillons(d))}" aria-hidden="true">${brut(CAVALIER)}</span></div>` : svg;
+  return entree ? html`<div class="${classe.replace('route--entree', '').trim()} route-cadre" data-audit-ignorer data-grille="manipuler" data-souris data-route-jeu>${svg}<span class="route-mob" data-route-mob data-points="${JSON.stringify(echantillons(d))}" aria-hidden="true"><span class="route-bulle" data-route-bulle data-texte-souris="${c.s('commun.rouleSouris')}" data-texte-doigt="${c.s('commun.rouleDoigt')}"></span><span class="route-mob-dessin" data-route-dessin>${brut(CAVALIER)}</span></span></div>` : svg;
 }
 
 /* Petite mobylette dessinée (silhouette), pour le plan. */
@@ -83,19 +83,33 @@ export function plan(c, { parcours = ['fallavier', 'cremieu'], classe = '' } = {
     if (l.cote === 'bas') return `left:${x.toFixed(2)}%;top:${y}%`;
     return `left:${x.toFixed(2)}%;top:${y}%;max-width:calc(${(100 - x).toFixed(2)}% - 20px)`;
   };
-  const donnees = JSON.stringify(Object.fromEntries(parcours.map((p) => [p, k.parcours[p].points])));
+  /* Données du plan : points du tracé, kilomètres réels de la balade et position de chaque lieu le long du tracé. */
+  const fiche = (p) => {
+    const pts = k.parcours[p].points, cumul = [0];
+    for (let i = 1; i < pts.length; i++) cumul.push(cumul[i - 1] + Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]));
+    const b = c.donnees.balades.find((x) => x.id === p);
+    const lieux = k.parcours[p].lieux.filter((n) => n !== 'depart').map((n) => {
+      let mieux = 0, dMin = Infinity;
+      pts.forEach((q, i) => { const d = Math.hypot(q[0] - k.lieux[n].p[0], q[1] - k.lieux[n].p[1]); if (d < dMin - 0.5) { dMin = d; mieux = i; } });
+      return { n, t: +(cumul[mieux] / cumul[cumul.length - 1]).toFixed(3) };
+    });
+    return { points: pts, km: b.km, nom: b.court, lieux };
+  };
+  const donnees = JSON.stringify(Object.fromEntries(parcours.map((p) => [p, fiche(p)])));
+  const premier = c.donnees.balades.find((x) => x.id === parcours[0]);
   return html`<div class="plan ${classe}" data-effet="parcours" data-plan data-visuel style="--ratio:${(VL / VH).toFixed(3)};--u:${u}">
   <script type="application/json" class="plan-donnees">${brut(donnees)}</script>
   <div class="plan-carte">
     <svg class="plan-svg" viewBox="${VX} ${VY} ${VL} ${VH}" aria-hidden="true">
       <g class="plan-relief" fill="none"><path d="M-320 120 C -60 60 60 150 190 100 S 420 40 760 110"/><path d="M-320 260 C -40 210 120 300 250 250 S 470 190 760 270"/><path d="M-320 420 C -70 370 40 440 170 400 S 430 330 760 420"/><path d="M-320 510 C -90 470 60 540 200 500 S 450 450 760 520"/><path d="M-320 610 C -30 560 110 650 260 600 S 480 560 760 640"/><path d="M-320 700 C -60 660 90 730 240 690 S 470 650 760 720"/><ellipse cx="470" cy="150" rx="70" ry="36"/><ellipse cx="470" cy="150" rx="38" ry="18"/><ellipse cx="-60" cy="330" rx="74" ry="34"/><ellipse cx="-60" cy="330" rx="40" ry="16"/><ellipse cx="420" cy="640" rx="80" ry="30"/></g>
       ${parcours.map((p) => brut(`<path class="plan-fantome" d="${k.parcours[p].d}" fill="none"/><path class="plan-trace" data-trace="${p}" d="${k.parcours[p].d}" pathLength="1" fill="none"/>`))}
-      ${noms.map((n) => brut(`<circle class="plan-point${n === 'depart' ? ' plan-point--depart' : ''}" cx="${k.lieux[n].p[0]}" cy="${k.lieux[n].p[1]}" r="${((n === 'depart' ? 11 : 7) * u).toFixed(1)}"/>`))}
+      ${noms.map((n) => brut(`<circle class="plan-point${n === 'depart' ? ' plan-point--depart' : ''}" data-lieu="${n}" cx="${k.lieux[n].p[0]}" cy="${k.lieux[n].p[1]}" r="${((n === 'depart' ? 11 : 7) * u).toFixed(1)}"/>`))}
       ${brut(`<g transform="translate(${k.lieux.depart.p[0]} ${k.lieux.depart.p[1]}) scale(${u})">${MOB}</g>`)}
     </svg>
-    ${noms.map((n) => html`<span class="plan-nom plan-nom--${k.lieux[n].cote}${n === 'depart' ? ' plan-nom--depart' : ''}${k.lieux[n].secondaire ? ' plan-nom--secondaire' : ''}" data-repere style="${pos(k.lieux[n])}">${k.lieux[n].nom}</span>`)}
+    ${noms.map((n) => html`<span class="plan-nom plan-nom--${k.lieux[n].cote}${n === 'depart' ? ' plan-nom--depart' : ''}${k.lieux[n].secondaire ? ' plan-nom--secondaire' : ''}" data-repere data-lieu="${n}" style="${pos(k.lieux[n])}">${k.lieux[n].nom}</span>`)}
+    <p class="plan-km chiffres" aria-hidden="true" data-indicateur><span data-plan-nom>${premier.court}</span><strong><span data-plan-km>0</span> km</strong></p>
   </div>
-  <p class="plan-note">${c.t('commun.traceIndicatif')}</p>
+  <p class="plan-note"><span>${c.t('commun.traceIndicatif')}</span><button type="button" class="plan-rejouer" data-plan-rejouer>${c.t('commun.rejouer')}</button></p>
 </div>`;
 }
 
@@ -122,7 +136,7 @@ export const formules = (c, b, { anime = true } = {}) => html`<ul class="formule
 export const pauses = (c, cle) => html`<section class="section pauses" id="pauses">
   <div class="conteneur">
     <div class="section-tete">${surtitre(c, `${cle}.sur`)}${titre(c, `${cle}.titre`)}<p data-anime>${c.t(`${cle}.texte`)}</p></div>
-    <div class="pauses-grille" data-anime="cascade">${c.donnees.pauses.map((p) => html`<article class="pause">
+    <div class="pauses-grille" data-anime="cascade">${c.donnees.pauses.map((p) => html`<article class="pause" data-survol="incline" data-survol-force="3">
       ${image(c, { nom: p.image, alt: p.nom, classe: 'pause-media', sizes: '(max-width: 760px) 40vw, 240px' })}
       <div><h3>${p.nom}</h3><p class="pause-lieu">${p.lieu}</p><p>${p.texte}</p>${p.tel ? html`<p class="pause-tel">${p.telTexte} <a href="tel:${p.telLien}">${p.tel}</a></p>` : ''}</div>
     </article>`)}</div>
@@ -130,6 +144,12 @@ export const pauses = (c, cle) => html`<section class="section pauses" id="pause
 </section>`;
 
 export const questions = (c) => html`<div class="questions">${c.donnees.faq.map((f) => html`<details class="question" data-anime><summary><span>${f.q}</span><i aria-hidden="true"></i></summary><div class="question-reponse"><p>${f.r}</p></div></details>`)}</div>`;
+
+/* Rangée de petites mobylettes : autant d'allumées que de mobylettes choisies (composeur, bon de sortie). */
+export const rangMobs = (max, n) => brut(`<p class="rang-mobs" data-rang-mobs data-visuel aria-hidden="true">${Array.from({ length: max }, (_, i) => `<span class="rang-mob${i < n ? ' est-la' : ''}">${CAVALIER}</span>`).join('')}</p>`);
+
+/* Bandeau de mots géants (décor) : les mots filent en sens opposés au défilement. */
+export const motsGeants = (c, cles) => html`<div class="mots-geants" data-fx="mots-geants" aria-hidden="true" data-ruban data-visuel data-audit-ignorer>${cles.map((cle, i) => html`<p class="mots-rangee mots-rangee--${i}" data-fx-rangee${i % 2 ? brut(' data-sens="-1"') : ''}>${c.t(cle)} ${c.t(cle)} ${c.t(cle)}</p>`)}</div>`;
 
 /* Composeur de sortie (module composeur-de-formule de la bibliothèque) : durée × nombre de mobylettes. Les prix viennent des données. */
 export function composeur(c, { prefixe = 'cdf' } = {}) {
@@ -172,6 +192,7 @@ export function composeur(c, { prefixe = 'cdf' } = {}) {
       <p class="surtitre" id="${prefixe}-recap-titre">${c.t('composeur.votre')}</p>
       <p class="cdf__total chiffres"><span class="socle-sr">${c.t('composeur.total')} : </span><span data-total data-prix>—</span></p>
       <p class="cdf__par" data-par-unite></p>
+      ${rangMobs(F.mobsMax, 2)}
       <p class="cdf__caution">${c.t('composeur.caution')} <strong class="chiffres" data-caution-total>${F.caution * 2} €</strong></p>
       <p class="cdf__mention">${c.t('commun.prixConfirmer')}</p>
       ${c.lien('reserver', { classe: 'bouton cdf__appel', texte: c.t('composeur.demander'), attrs: 'data-lien-reserver data-survol="magnetique"' })}
