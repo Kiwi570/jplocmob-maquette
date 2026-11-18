@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JP Loc Mob : balades en mobylette en Isère</title>
+<meta name="description" content="Location de mobylettes restaurées à Chèzeneuve : trois balades en Isère, casques et gants fournis, dès 50 € la demi-journée.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://jplocmob-maquette.vercel.app/">
+<style>:root{--fond:#F3EDDC;--texte:#1F3B30;--voile-fond:#1F3B30;--ouverture-fond:#F3EDDC;--menu-fond:#1F3B30}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/bricolage-grotesque-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/polices/instrument-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/modules.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F3EDDC">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JP Loc Mob">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="JP Loc Mob : balades en mobylette en Isère">
+<meta property="og:description" content="Location de mobylettes restaurées à Chèzeneuve : trois balades en Isère, casques et gants fournis, dès 50 € la demi-journée.">
+<meta property="og:url" content="https://jplocmob-maquette.vercel.app/">
+<meta property="og:image" content="https://jplocmob-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JP Loc Mob, une mobylette restaurée devant une palissade en bois">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"JP Loc Mob","url":"https://jplocmob-maquette.vercel.app/","telephone":"+33682382143","email":"jplocmob@gmail.com","description":"Location de mobylettes restaurées et balades en Isère, à Chèzeneuve et ses alentours.","address":{"@type":"PostalAddress","addressLocality":"Chèzeneuve","addressRegion":"Isère","addressCountry":"FR"},"priceRange":"50 € à 70 €","sameAs":["https://www.facebook.com/profile.php?id=61550602001718","https://www.instagram.com/jp_loc_mob/"]}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-240.png" alt="" width="88" height="88"><span data-voile-libelle>Accueil</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <svg class="ouverture-route" viewBox="0 0 1440 240" preserveAspectRatio="none"><path class="ouverture-route-bord" pathLength="1" d="M-20 150 C 220 40 420 230 720 120 S 1200 30 1460 130"/><path class="ouverture-route-ligne" pathLength="1" d="M-20 150 C 220 40 420 230 720 120 S 1200 30 1460 130"/></svg>
+  <span class="ouverture-encre"></span>
+  <img class="ouverture-logo" src="/assets/images/logo-240.png" alt="" width="132" height="132" data-ouverture-objet>
+  <p class="ouverture-ligne">Location de mobylettes en Isère</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil" aria-current="page">
+      <img src="/assets/images/logo-240.png" alt="" width="46" height="46"><span>JP Loc Mob</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/balades-et-tarifs" data-libelle="Balades et tarifs">Balades et tarifs</a></li><li><a href="/les-mobylettes" data-libelle="Les mobylettes">Les mobylettes</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil" aria-current="page">Accueil</a></li><li style="--i:1"><a href="/balades-et-tarifs" class="menu-lien" data-libelle="Balades et tarifs">Balades et tarifs</a></li><li style="--i:2"><a href="/les-mobylettes" class="menu-lien" data-libelle="Les mobylettes">Les mobylettes</a></li><li style="--i:3"><a href="/reserver" class="menu-lien" data-libelle="Réserver">Réserver</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33682382143">Appeler 06 82 38 21 43</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="hero" id="debut">
+  <div class="conteneur hero-grille">
+    <div class="hero-texte">
+      <p class="surtitre" data-entree>Location de mobylettes · Chèzeneuve, Isère</p>
+      <h1 class="tete-titre hero-titre" data-anime="gsap"><span class="ligne-masque"><span class="tete-ligne">La route</span></span><span class="ligne-masque"><span class="tete-ligne">est à <em>vous.</em></span></span></h1>
+      <p class="hero-intro" data-entree>Cinq mobylettes restaurées, trois balades en Isère, casques et gants fournis. <span class="hero-intro-suite">En solo, en couple ou entre amis.</span></p>
+      <p class="hero-actions" data-entree>
+        <a href="/reserver" class="bouton" data-libelle="Réserver" data-action-principale data-survol="magnetique">Réserver une balade</a>
+        <a class="bouton bouton--contour" href="#balades" data-sans-transition>Voir les balades</a>
+      </p>
+      <p class="hero-info" data-info-cle data-entree><span class="pastille" aria-hidden="true"></span>Dès 50 € la demi-journée</p>
+    </div>
+    <figure class="media hero-media" data-fx="parallaxe" data-fx-force="6" data-iris-centre style="--cadrage:50% 45%">
+  <picture>
+    <img src="/assets/images/accueil-ouverture-1280.webp" srcset="/assets/images/accueil-ouverture-640.webp 640w, /assets/images/accueil-ouverture-1280.webp 1280w, /assets/images/accueil-ouverture-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 52vw" alt="Mobylette gris-bleu à sacoches de cuir, posée dans l&#39;herbe devant une palissade en bois" width="1280" height="960" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+  </div>
+  <div class="hero-route route-cadre" data-audit-ignorer><svg class="route route--papier route--entree" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" data-effet="route" data-grille="fil" data-visuel>
+  <mask id="route-2" maskUnits="userSpaceOnUse" x="-40" y="-40" width="1520" height="200"><path class="route-masque" d="M-20 78 C 180 10 380 120 640 60 S 1080 0 1460 70" pathLength="1" fill="none" stroke="#fff" stroke-width="40"/></mask>
+  <g mask="url(#route-2)"><path class="route-bord" d="M-20 78 C 180 10 380 120 640 60 S 1080 0 1460 70" fill="none"/><path class="route-ligne" d="M-20 78 C 180 10 380 120 640 60 S 1080 0 1460 70" fill="none"/></g>
+</svg><span class="route-mob" data-route-mob data-points="[[-0.0139,0.65],[0.0159,0.5502],[0.0458,0.4895],[0.0758,0.4615],[0.1061,0.4599],[0.1368,0.4784],[0.168,0.5105],[0.1997,0.55],[0.232,0.5905],[0.265,0.6257],[0.2989,0.6493],[0.3337,0.6548],[0.3695,0.636],[0.4064,0.5865],[0.4444,0.5],[0.4824,0.4005],[0.519,0.3166],[0.5548,0.2483],[0.5901,0.1958],[0.6255,0.1594],[0.6613,0.1392],[0.6979,0.1354],[0.7358,0.1482],[0.7754,0.1778],[0.8172,0.2242],[0.8615,0.2879],[0.9087,0.3688],[0.9594,0.4672],[1.0139,0.5833]]" aria-hidden="true"><svg viewBox="0 0 44 30" aria-hidden="true"><g fill="none" stroke="#1F3B30" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="6.5" fill="#F3EDDC"/><circle cx="35" cy="21" r="6.5" fill="#F3EDDC"/><path d="M9 21 16 8h13l6 13M16 8l-3-5H9M29 8l2.4-6h4.4"/></g><path d="M17 5.6h9" stroke="#1F3B30" stroke-width="5" stroke-linecap="round"/><path d="M15 12h13l3 6H17z" fill="#C93A1E" stroke="#1F3B30" stroke-width="2" stroke-linejoin="round"/></svg></span></div>
+</section>
+<section class="section sombre manifeste" id="esprit">
+  <div class="conteneur manifeste-grille">
+    <div>
+      <p class="surtitre" data-anime>L&#39;esprit</p>
+      <p class="manifeste-texte" data-anime="mots">Nos mobylettes sont les témoins d&#39;une époque : celle de la liberté et de l&#39;authenticité. On vous accueille autour d&#39;un café, on vous explique tout, et vous partez redécouvrir l&#39;Isère à votre rythme.</p>
+      <p class="manifeste-signature" data-anime>Une aventure nostalgique en Isère.</p>
+    </div>
+  </div>
+  <figure class="media manifeste-media" data-grok data-fx="parallaxe" data-fx-force="10" style="--cadrage:50% 60%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/g-route-campagne-mobile-640.webp 640w, /assets/images/grok/g-route-campagne-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/g-route-campagne-1280.webp" srcset="/assets/images/grok/g-route-campagne-640.webp 640w, /assets/images/grok/g-route-campagne-1280.webp 1280w, /assets/images/grok/g-route-campagne-1920.webp 1920w" sizes="100vw" alt="Petite route de campagne entre les haies et les noyers, au soleil du soir" width="1280" height="720" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+</section>
+<section class="section balades" id="balades">
+  <div class="conteneur">
+    <div class="section-tete"><p class="surtitre" data-anime>Les balades</p><h2 class="titre " data-anime="lignes">Trois balades, <em>trois routes</em></h2><p data-anime>Deux parcours tracés pour vous, et un troisième que vous dessinez vous-même.</p></div>
+    <div class="balades-grille" data-anime="cascade"><article class="carte-balade" id="carte-fallavier" data-survol="incline" data-survol-force="4">
+  <figure class="media carte-balade-media" data-fx="zoom" data-fx-force="12" style="--cadrage:50% 40%">
+  <picture>
+    <img src="/assets/images/fallavier-chateau-1280.webp" srcset="/assets/images/fallavier-chateau-640.webp 640w, /assets/images/fallavier-chateau-1280.webp 1280w" sizes="(max-width: 760px) 86vw, 30vw" alt="Balade Fallavier" width="1280" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <span class="borne borne--carte" data-effet="borne" data-anime>
+  <span class="borne-tete" aria-hidden="true"></span>
+  <strong class="borne-km chiffres"><span data-compteur="37">37</span> <small>km</small></strong>
+</span>
+  <div class="carte-balade-texte">
+    <h3>Balade Fallavier</h3>
+    <p>Le château de Fallavier, son parc au bord de l&#39;étang, puis le parc animalier du château de Moidière.</p>
+    <p class="carte-balade-bas"><span class="prix-des" data-prix>dès <strong>60 €</strong></span><a href="/balades-et-tarifs#fallavier" class="lien-fleche" data-libelle="Balades et tarifs" aria-label="Voir la balade : Balade Fallavier">Voir la balade</a></p>
+  </div>
+</article><article class="carte-balade" id="carte-cremieu" data-survol="incline" data-survol-force="4">
+  <figure class="media carte-balade-media" data-fx="zoom" data-fx-force="12" style="--cadrage:50% 35%">
+  <picture>
+    <img src="/assets/images/cremieu-rue-960.webp" srcset="/assets/images/cremieu-rue-640.webp 640w, /assets/images/cremieu-rue-960.webp 960w" sizes="(max-width: 760px) 86vw, 30vw" alt="Village des brocanteurs et Crémieu" width="960" height="1200" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <span class="borne borne--carte" data-effet="borne" data-anime>
+  <span class="borne-tete" aria-hidden="true"></span>
+  <strong class="borne-km chiffres"><span data-compteur="63">63</span> <small>km</small></strong>
+</span>
+  <div class="carte-balade-texte">
+    <h3>Village des brocanteurs et Crémieu</h3>
+    <p>Visite du village des brocanteurs, puis découverte de la ville médiévale de Crémieu et de ses remparts.</p>
+    <p class="carte-balade-bas"><span class="prix-des" data-prix>dès <strong>60 €</strong></span><a href="/balades-et-tarifs#cremieu" class="lien-fleche" data-libelle="Balades et tarifs" aria-label="Voir la balade : Village des brocanteurs et Crémieu">Voir la balade</a></p>
+  </div>
+</article><article class="carte-balade" id="carte-libre" data-survol="incline" data-survol-force="4">
+  <figure class="media carte-balade-media" data-grok data-fx="zoom" data-fx-force="12" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/g-route-libre-1280.webp" srcset="/assets/images/grok/g-route-libre-640.webp 640w, /assets/images/grok/g-route-libre-960.webp 960w, /assets/images/grok/g-route-libre-1280.webp 1280w" sizes="(max-width: 760px) 86vw, 30vw" alt="Itinéraire libre" width="1280" height="1920" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <span class="borne borne--carte" data-effet="borne" data-anime>
+  <span class="borne-tete" aria-hidden="true"></span>
+  <strong class="borne-km chiffres"><span data-compteur="70">70</span> <small>km maximum</small></strong>
+</span>
+  <div class="carte-balade-texte">
+    <h3>Itinéraire libre</h3>
+    <p>Vous choisissez votre trajet, dans la limite de 70 km.</p>
+    <p class="carte-balade-bas"><span class="prix-des" data-prix>dès <strong>50 €</strong></span><a href="/balades-et-tarifs#libre" class="lien-fleche" data-libelle="Balades et tarifs" aria-label="Voir la balade : Itinéraire libre">Voir la balade</a></p>
+  </div>
+</article></div>
+    <p class="section-suite" data-anime><a href="/balades-et-tarifs" class="bouton bouton--contour" data-libelle="Balades et tarifs">Tous les parcours et les tarifs</a></p>
+  </div>
+</section>
+<svg class="route route--papier route--jonction" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" data-effet="route" data-grille="fil" data-visuel>
+  <mask id="route-3" maskUnits="userSpaceOnUse" x="-40" y="-40" width="1520" height="200"><path class="route-masque" d="M-20 40 C 240 110 420 0 700 62 S 1180 118 1460 36" pathLength="1" fill="none" stroke="#fff" stroke-width="40"/></mask>
+  <g mask="url(#route-3)"><path class="route-bord" d="M-20 40 C 240 110 420 0 700 62 S 1180 118 1460 36" fill="none"/><path class="route-ligne" d="M-20 40 C 240 110 420 0 700 62 S 1180 118 1460 36" fill="none"/></g>
+</svg>
+<section class="section sombre carte" id="carte">
+  <div class="conteneur carte-grille">
+    <div class="carte-plan"><div class="plan " data-effet="parcours" data-plan data-visuel style="--ratio:1.104;--u:1.092">
+  <script type="application/json" class="plan-donnees">{"fallavier":[[292,600],[292.9,602.3],[294.4,605.6],[296,609.4],[297.3,613.6],[297.8,617.8],[297.1,621.8],[294.4,625.8],[289.9,629.9],[284.6,634.1],[279.5,638.3],[275.6,642.2],[273.8,645.8],[275.1,649.1],[278.9,652.4],[283.9,655.4],[288.7,658.1],[291.9,660.5],[292,662.5],[288.8,664],[283.3,665.1],[276.2,665.8],[268.1,666.3],[259.8,666.6],[252,666.9],[244.3,666.9],[236,666.5],[227.6,665.9],[219.1,665.4],[210.9,665.2],[203.3,665.5],[195.9,667],[188.4,669.7],[181.3,672.8],[174.7,675.2],[169.1,676.2],[164.7,674.9],[161.9,670.7],[160.5,664.2],[160.1,656.2],[160.1,647.7],[160.1,639.6],[159.6,632.7],[158.8,626.9],[158.1,621.3],[157.4,616.1],[156.5,611.3],[155.4,607.1],[153.8,603.6],[152,600.8],[150.1,598.6],[147.8,597],[145.2,595.9],[141.9,595.2],[137.8,594.9],[132.5,595.6],[125.9,597.6],[118.7,600],[111.5,602.1],[104.8,603.1],[99.3,602.2],[95,598.9],[91.4,593.7],[88.3,587.4],[85.7,580.8],[83.3,574.8],[81.1,570.2],[78.8,567.2],[76.5,565.2],[74.5,563.8],[73,562.5],[72.2,560.9],[72.4,558.5],[74.1,555.3],[77.3,551.7],[81.2,547.8],[85.1,543.7],[88.2,539.5],[89.8,535.3],[89.6,531.1],[88.3,526.6],[86.2,522.1],[83.7,517.6],[81.4,513.2],[79.6,509.1],[78.4,505.4],[77.3,502],[76.4,498.8],[75.5,495.5],[74.7,491.7],[73.8,487.3],[72.9,481.9],[72,475.6],[71.2,468.9],[70.4,462.2],[69.5,456.1],[68.7,450.9],[67.7,446.8],[66.5,443.5],[65.4,440.7],[64.4,438.2],[63.7,435.6],[63.6,432.7],[64.1,429.1],[65.2,425],[66.6,420.9],[68.1,417.2],[69.6,414.4],[70.9,413.1],[71.9,413.5],[72.8,415.4],[73.7,418.1],[74.5,421.4],[75.5,424.7],[76.7,427.6],[78.3,430.2],[80.3,432.8],[82.4,435.5],[84.3,438.2],[85.7,440.9],[86.2,443.6],[85.6,445.9],[84,447.7],[81.9,449.5],[79.7,451.8],[77.8,455],[76.7,459.6],[76.4,466.2],[76.5,474.5],[76.9,483.7],[77.6,493.1],[78.6,501.8],[79.6,509.1],[80.4,515.2],[81,520.8],[81.8,525.7],[83.2,529.9],[85.7,533.1],[89.8,535.3],[96.1,535.8],[104.4,534.7],[113.8,532.6],[123.4,530.4],[132.2,528.8],[139.3,528.7],[144.4,530.1],[148.1,532.3],[151,535.2],[153.8,538.6],[156.9,542.1],[161.1,545.5],[166.4,549.6],[172.3,554.5],[178.6,559.7],[185.1,564.3],[191.5,567.5],[197.5,568.7],[203.4,566.8],[209.5,562.1],[215.5,556.1],[221.2,550.2],[226.1,545.7],[230.2,544],[233.1,545.7],[234.9,549.7],[236.2,555.1],[237.1,561.1],[238.1,566.7],[239.6,570.9],[241.4,573.9],[243.2,576.4],[245,578.4],[247.1,580.2],[249.4,581.8],[252,583.3],[255.1,584.6],[258.7,585.5],[262.5,586.3],[266.5,587],[270.3,587.9],[273.8,589.1],[277.3,590.7],[280.8,592.8],[284.3,594.9],[287.4,597],[290.1,598.8],[292,600]],"cremieu":[[292,600],[294.1,602],[297.2,605.1],[300.8,608.6],[304.4,611.9],[307.6,614.2],[310,615],[311.3,614.2],[311.7,612.3],[311.8,609.6],[311.9,606],[312.5,601.8],[314,597],[316.6,591.2],[320.1,584],[324.1,576.2],[328.2,568.4],[331.9,561.1],[335,555],[337.3,550.2],[339.3,546.4],[340.9,543.1],[342.3,540],[343.6,536.8],[345,533],[346.3,528.6],[347.4,524],[348.5,519.2],[349.6,514.3],[350.7,509.6],[352,505],[353.2,500.7],[354.3,496.5],[355.4,492.4],[356.9,488.4],[359,484.2],[362,480],[367.3,476],[374.9,472.3],[383.2,468.6],[390.4,464.4],[394.9,459.3],[395,453],[389.5,445],[379.6,435.7],[366.9,425.4],[353.3,414.9],[340.4,404.6],[330,395],[322.2,386],[315.5,377],[309.6,368.2],[304,359.9],[298.3,352.1],[292,345],[284.6,339.2],[276.3,334.6],[267.9,330.6],[260.1,326.5],[253.9,321.5],[250,315],[249.3,306.9],[251.3,297.9],[254.9,288],[258.7,277.4],[261.5,266.4],[262,255],[259.2,242.3],[253.9,228.1],[247.5,213.3],[241.7,199.1],[238,186.7],[238,177],[242.6,170.9],[250.9,167.7],[261.2,166.1],[272.2,165.1],[282.3,163.5],[290,160],[295.3,154.5],[299.4,148],[302.6,140.8],[305.3,133.4],[307.6,126.4],[310,120],[312.7,114.6],[315.4,109.7],[317.8,105.2],[319.6,100.6],[320.5,95.6],[320,90],[318,83.2],[314.6,75.3],[310.2,67.1],[305.2,59.1],[300,52.2],[295,47],[289.2,43.6],[282.1,41.5],[274.9,40.4],[268.4,40],[263.8,39.9],[262,40],[263.8,39.9],[268.4,40],[274.9,40.4],[282.1,41.5],[289.2,43.6],[295,47],[299.7,52.3],[304.3,59.3],[308.6,67.2],[312.7,75.5],[316.5,83.3],[320,90],[323.1,95.8],[325.7,101.3],[328,106.3],[330.2,110.7],[332.5,114.4],[335,117],[337.6,118],[340.3,117.3],[343,115.8],[345.8,114.4],[348.8,113.8],[352,115],[355.1,118.1],[357.9,122.4],[360.8,127.7],[364.4,133.4],[369,139.3],[375,145],[383.6,150.5],[394.7,156.3],[406.8,162.2],[418.4,168.1],[428.3,174.1],[435,180],[437.8,186],[437.7,192.1],[435.8,198.2],[433.1,204.2],[430.8,209.9],[430,215],[430.4,219.6],[431,223.9],[432,227.8],[433.4,231.4],[435.4,234.8],[438,238],[441.4,241.3],[445.5,244.6],[450.1,247.8],[455.1,250.4],[460.1,252.2],[465,253],[470,252.4],[475.4,250.5],[480.9,247.9],[486.2,244.9],[491,242.1],[495,240],[498.1,237.5],[500.4,234],[502.2,230.7],[503.7,228.7],[505.3,229.1],[507,233],[509.6,241.7],[513,254.4],[516.4,269.5],[519,285.4],[519.8,300.5],[518,313],[512.9,322.8],[504.9,331.2],[495.2,338.7],[485,345.9],[475.2,353.5],[467,362],[460.5,371.8],[454.9,382.6],[449.8,393.7],[444.8,404.5],[439.6,414.5],[434,423],[427.8,429.8],[421.2,435.4],[414.5,440.1],[407.8,444.4],[401.2,448.5],[395,453],[388.9,457.7],[382.7,462.3],[376.7,466.8],[371.1,471.3],[366.1,475.7],[362,480],[359,484.2],[356.9,488.4],[355.4,492.4],[354.3,496.5],[353.2,500.7],[352,505],[350.7,509.6],[349.6,514.3],[348.5,519.2],[347.4,524],[346.3,528.6],[345,533],[343.6,536.8],[342.3,540],[340.9,543.1],[339.3,546.4],[337.3,550.2],[335,555],[332.1,561.3],[328.9,569],[325.2,577.2],[321.5,585.1],[317.7,592],[314,597],[310.1,599.8],[305.9,601],[301.7,601.1],[297.7,600.7],[294.4,600.1],[292,600]]}</script>
+  <div class="plan-carte">
+    <svg class="plan-svg" viewBox="-126 -45 906 821" aria-hidden="true">
+      <g class="plan-relief" fill="none"><path d="M-320 120 C -60 60 60 150 190 100 S 420 40 760 110"/><path d="M-320 260 C -40 210 120 300 250 250 S 470 190 760 270"/><path d="M-320 420 C -70 370 40 440 170 400 S 430 330 760 420"/><path d="M-320 510 C -90 470 60 540 200 500 S 450 450 760 520"/><path d="M-320 610 C -30 560 110 650 260 600 S 480 560 760 640"/><path d="M-320 700 C -60 660 90 730 240 690 S 470 650 760 720"/><ellipse cx="470" cy="150" rx="70" ry="36"/><ellipse cx="470" cy="150" rx="38" ry="18"/><ellipse cx="-60" cy="330" rx="74" ry="34"/><ellipse cx="-60" cy="330" rx="40" ry="16"/><ellipse cx="420" cy="640" rx="80" ry="30"/></g>
+      <path class="plan-fantome" d="M292.0 600.0 C292.9 603.6 300.1 614.2 297.1 621.8 C294.1 629.4 274.7 639.0 273.8 645.8 C272.9 652.6 295.6 659.0 292.0 662.5 C288.4 666.0 266.8 666.4 252.0 666.9 C237.2 667.4 217.9 664.2 203.3 665.5 C188.8 666.8 172.0 680.4 164.7 674.9 C157.4 669.4 161.4 644.6 159.6 632.7 C157.8 620.8 157.4 609.9 153.8 603.6 C150.2 597.3 146.9 595.1 137.8 594.9 C128.7 594.7 108.8 606.3 99.3 602.2 C89.8 598.1 85.6 577.5 81.1 570.2 C76.6 562.9 71.0 564.3 72.4 558.5 C73.9 552.7 88.6 543.5 89.8 535.3 C91.0 527.1 82.3 517.1 79.6 509.1 C76.9 501.1 75.6 497.0 73.8 487.3 C72.0 477.6 70.4 460.0 68.7 450.9 C67.0 441.8 63.2 439.0 63.6 432.7 C64.0 426.4 68.7 414.0 70.9 413.1 C73.1 412.2 74.2 422.5 76.7 427.6 C79.2 432.7 86.2 438.3 86.2 443.6 C86.2 448.9 77.8 448.7 76.7 459.6 C75.6 470.5 77.4 496.5 79.6 509.1 C81.8 521.7 79.8 532.0 89.8 535.3 C99.8 538.6 127.4 527.0 139.3 528.7 C151.2 530.4 151.4 538.8 161.1 545.5 C170.8 552.2 186.0 569.0 197.5 568.7 C209.0 568.5 223.2 543.6 230.2 544.0 C237.2 544.4 236.0 564.4 239.6 570.9 C243.2 577.4 246.3 580.3 252.0 583.3 C257.7 586.3 267.1 586.3 273.8 589.1 C280.5 591.9 289.0 598.2 292.0 600.0" fill="none"/><path class="plan-trace" data-trace="fallavier" d="M292.0 600.0 C292.9 603.6 300.1 614.2 297.1 621.8 C294.1 629.4 274.7 639.0 273.8 645.8 C272.9 652.6 295.6 659.0 292.0 662.5 C288.4 666.0 266.8 666.4 252.0 666.9 C237.2 667.4 217.9 664.2 203.3 665.5 C188.8 666.8 172.0 680.4 164.7 674.9 C157.4 669.4 161.4 644.6 159.6 632.7 C157.8 620.8 157.4 609.9 153.8 603.6 C150.2 597.3 146.9 595.1 137.8 594.9 C128.7 594.7 108.8 606.3 99.3 602.2 C89.8 598.1 85.6 577.5 81.1 570.2 C76.6 562.9 71.0 564.3 72.4 558.5 C73.9 552.7 88.6 543.5 89.8 535.3 C91.0 527.1 82.3 517.1 79.6 509.1 C76.9 501.1 75.6 497.0 73.8 487.3 C72.0 477.6 70.4 460.0 68.7 450.9 C67.0 441.8 63.2 439.0 63.6 432.7 C64.0 426.4 68.7 414.0 70.9 413.1 C73.1 412.2 74.2 422.5 76.7 427.6 C79.2 432.7 86.2 438.3 86.2 443.6 C86.2 448.9 77.8 448.7 76.7 459.6 C75.6 470.5 77.4 496.5 79.6 509.1 C81.8 521.7 79.8 532.0 89.8 535.3 C99.8 538.6 127.4 527.0 139.3 528.7 C151.2 530.4 151.4 538.8 161.1 545.5 C170.8 552.2 186.0 569.0 197.5 568.7 C209.0 568.5 223.2 543.6 230.2 544.0 C237.2 544.4 236.0 564.4 239.6 570.9 C243.2 577.4 246.3 580.3 252.0 583.3 C257.7 586.3 267.1 586.3 273.8 589.1 C280.5 591.9 289.0 598.2 292.0 600.0" pathLength="1" fill="none"/><path class="plan-fantome" d="M292 600 C295.0 602.5 306.3 615.5 310 615 C313.7 614.5 309.8 607.0 314 597 C318.2 587.0 329.8 565.7 335 555 C340.2 544.3 342.2 541.3 345 533 C347.8 524.7 349.2 513.8 352 505 C354.8 496.2 354.8 488.7 362 480 C369.2 471.3 400.3 467.2 395 453 C389.7 438.8 347.2 413.0 330 395 C312.8 377.0 305.3 358.3 292 345 C278.7 331.7 255.0 330.0 250 315 C245.0 300.0 264.0 278.0 262 255 C260.0 232.0 233.3 192.8 238 177 C242.7 161.2 278.0 169.5 290 160 C302.0 150.5 305.0 131.7 310 120 C315.0 108.3 322.5 102.2 320 90 C317.5 77.8 304.7 55.3 295 47 C285.3 38.7 262.0 40.0 262 40 C262.0 40.0 285.3 38.7 295 47 C304.7 55.3 313.3 78.3 320 90 C326.7 101.7 329.7 112.8 335 117 C340.3 121.2 345.3 110.3 352 115 C358.7 119.7 361.2 134.2 375 145 C388.8 155.8 425.8 168.3 435 180 C444.2 191.7 429.5 205.3 430 215 C430.5 224.7 432.2 231.7 438 238 C443.8 244.3 455.5 252.7 465 253 C474.5 253.3 488.0 243.3 495 240 C502.0 236.7 503.2 220.8 507 233 C510.8 245.2 524.7 291.5 518 313 C511.3 334.5 481.0 343.7 467 362 C453.0 380.3 446.0 407.8 434 423 C422.0 438.2 407.0 443.5 395 453 C383.0 462.5 369.2 471.3 362 480 C354.8 488.7 354.8 496.2 352 505 C349.2 513.8 347.8 524.7 345 533 C342.2 541.3 340.2 544.3 335 555 C329.8 565.7 321.2 589.5 314 597 C306.8 604.5 295.7 599.5 292 600" fill="none"/><path class="plan-trace" data-trace="cremieu" d="M292 600 C295.0 602.5 306.3 615.5 310 615 C313.7 614.5 309.8 607.0 314 597 C318.2 587.0 329.8 565.7 335 555 C340.2 544.3 342.2 541.3 345 533 C347.8 524.7 349.2 513.8 352 505 C354.8 496.2 354.8 488.7 362 480 C369.2 471.3 400.3 467.2 395 453 C389.7 438.8 347.2 413.0 330 395 C312.8 377.0 305.3 358.3 292 345 C278.7 331.7 255.0 330.0 250 315 C245.0 300.0 264.0 278.0 262 255 C260.0 232.0 233.3 192.8 238 177 C242.7 161.2 278.0 169.5 290 160 C302.0 150.5 305.0 131.7 310 120 C315.0 108.3 322.5 102.2 320 90 C317.5 77.8 304.7 55.3 295 47 C285.3 38.7 262.0 40.0 262 40 C262.0 40.0 285.3 38.7 295 47 C304.7 55.3 313.3 78.3 320 90 C326.7 101.7 329.7 112.8 335 117 C340.3 121.2 345.3 110.3 352 115 C358.7 119.7 361.2 134.2 375 145 C388.8 155.8 425.8 168.3 435 180 C444.2 191.7 429.5 205.3 430 215 C430.5 224.7 432.2 231.7 438 238 C443.8 244.3 455.5 252.7 465 253 C474.5 253.3 488.0 243.3 495 240 C502.0 236.7 503.2 220.8 507 233 C510.8 245.2 524.7 291.5 518 313 C511.3 334.5 481.0 343.7 467 362 C453.0 380.3 446.0 407.8 434 423 C422.0 438.2 407.0 443.5 395 453 C383.0 462.5 369.2 471.3 362 480 C354.8 488.7 354.8 496.2 352 505 C349.2 513.8 347.8 524.7 345 533 C342.2 541.3 340.2 544.3 335 555 C329.8 565.7 321.2 589.5 314 597 C306.8 604.5 295.7 599.5 292 600" pathLength="1" fill="none"/>
+      <circle class="plan-point plan-point--depart" cx="292" cy="600" r="12.0"/><circle class="plan-point" cx="292" cy="662.5" r="7.6"/><circle class="plan-point" cx="81.1" cy="570.2" r="7.6"/><circle class="plan-point" cx="76" cy="517.1" r="7.6"/><circle class="plan-point" cx="70.9" cy="413.1" r="7.6"/><circle class="plan-point" cx="400" cy="513" r="7.6"/><circle class="plan-point" cx="262" cy="40" r="7.6"/><circle class="plan-point" cx="352" cy="115" r="7.6"/><circle class="plan-point" cx="507" cy="233" r="7.6"/><circle class="plan-point" cx="434" cy="423" r="7.6"/>
+      <g transform="translate(292 600) scale(1.092)"><g class="plan-mob" data-mob><circle r="15" fill="#F3EDDC"/><g transform="translate(-11 -8)" fill="none" stroke="#1F3B30" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="4.5" cy="12" r="3.6"/><circle cx="17.5" cy="12" r="3.6"/><path d="M4.5 12 8 5.5h6.5l3 6.5M8 5.5 6.5 3h-2M14.5 5.5l1.2-3.2h2.4M9.5 5.5h4" /><path d="M9 4.4h4.2" stroke-width="2.6"/></g></g></g>
+    </svg>
+    <span class="plan-nom plan-nom--droite plan-nom--depart" data-repere style="left:46.14%;top:78.56%;max-width:calc(53.86% - 20px)">Chèzeneuve</span><span class="plan-nom plan-nom--bas plan-nom--secondaire" data-repere style="left:46.14%;top:86.18%">Crachier</span><span class="plan-nom plan-nom--gauche plan-nom--secondaire" data-repere style="right:77.14%;top:74.93%;max-width:calc(22.86% - 18px)">Vignieu</span><span class="plan-nom plan-nom--gauche" data-repere style="right:77.70%;top:68.47%;max-width:calc(22.30% - 18px)">Moidière</span><span class="plan-nom plan-nom--gauche" data-repere style="right:78.27%;top:55.80%;max-width:calc(21.73% - 18px)">Fallavier</span><span class="plan-nom plan-nom--droite plan-nom--secondaire" data-repere style="left:58.06%;top:67.97%;max-width:calc(41.94% - 20px)">Bourgoin-Jallieu</span><span class="plan-nom plan-nom--gauche" data-repere style="right:57.17%;top:10.35%;max-width:calc(42.83% - 18px)">Village des brocanteurs</span><span class="plan-nom plan-nom--droite" data-repere style="left:52.76%;top:19.49%;max-width:calc(47.24% - 20px)">Crémieu</span><span class="plan-nom plan-nom--droite plan-nom--secondaire" data-repere style="left:69.87%;top:33.86%;max-width:calc(30.13% - 20px)">Trept</span><span class="plan-nom plan-nom--droite plan-nom--secondaire" data-repere style="left:61.81%;top:57.00%;max-width:calc(38.19% - 20px)">Saint-Savin</span>
+  </div>
+  <p class="plan-note">Tracés indicatifs, redessinés d&#39;après les parcours du site.</p>
+</div></div>
+    <div class="carte-texte">
+      <p class="surtitre" data-anime>Sur la carte</p>
+      <h2 class="titre " data-anime="lignes">Deux boucles au départ de <em>Chèzeneuve</em></h2>
+      <p data-anime>On part de Chèzeneuve et on y revient. Entre les deux, des petites routes, un château, des daims, des remparts.</p>
+      <article class="carte-boucle" data-boucle="fallavier">
+        <div class="carte-boucle-tete"><span class="borne " data-effet="borne" data-anime>
+  <span class="borne-tete" aria-hidden="true"></span>
+  <strong class="borne-km chiffres"><span data-compteur="37">37</span> <small>km</small></strong>
+</span><h3>Balade Fallavier</h3></div>
+        <ol class="etapes" data-anime="cascade"><li>Chèzeneuve</li><li>Crachier</li><li>Vignieu</li><li>Parc animalier du château de Moidière</li><li>Parc de Fallavier</li><li>Château de Fallavier</li><li>Chèzeneuve</li></ol>
+        <p><a href="/reserver?balade=fallavier" class="lien-fleche" data-libelle="Réserver" aria-label="Réserver cette balade : Balade Fallavier">Réserver cette balade</a></p>
+      </article><article class="carte-boucle" data-boucle="cremieu">
+        <div class="carte-boucle-tete"><span class="borne " data-effet="borne" data-anime>
+  <span class="borne-tete" aria-hidden="true"></span>
+  <strong class="borne-km chiffres"><span data-compteur="63">63</span> <small>km</small></strong>
+</span><h3>Village des brocanteurs et Crémieu</h3></div>
+        <ol class="etapes" data-anime="cascade"><li>Chèzeneuve</li><li>Bourgoin-Jallieu</li><li>Village des brocanteurs</li><li>Crémieu</li><li>Trept</li><li>Saint-Savin</li><li>Chèzeneuve</li></ol>
+        <p><a href="/reserver?balade=cremieu" class="lien-fleche" data-libelle="Réserver" aria-label="Réserver cette balade : Village des brocanteurs et Crémieu">Réserver cette balade</a></p>
+      </article>
+      <div class="carte-pauses" data-anime>
+        <p><strong>Deux pauses en terrasse sur la route</strong></p>
+        <p>Duplex 87 (Saint-Agnin-sur-Bion), La Bascule (Saint-Alban-de-Roche). <a href="/balades-et-tarifs#pauses" class="lien-fleche" data-libelle="Balades et tarifs">Voir les adresses</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section mobs" id="mobylettes">
+  <div class="conteneur section-tete section-tete--ligne">
+    <div><p class="surtitre" data-anime>Les mobylettes</p><h2 class="titre " data-anime="lignes">Cinq mobylettes <em>restaurées</em></h2></div>
+    <div><p data-anime>Bleues ou rouges, toutes d&#39;époque. Elles sont louées selon la demande et le planning.</p><p data-anime><a href="/les-mobylettes" class="lien-fleche" data-libelle="Les mobylettes">Découvrir les mobylettes</a></p></div>
+  </div>
+  <div class="rangee" data-rangee data-ruban data-effet="rangee" tabindex="0" role="region" aria-label="Photos des mobylettes">
+    <div class="rangee-piste" data-rangee-piste><figure class="rangee-carte">
+      <figure class="media rangee-media" style="--cadrage:50% 55%">
+  <picture>
+    <img src="/assets/images/mob-rouge-960.webp" srcset="/assets/images/mob-rouge-480.webp 480w, /assets/images/mob-rouge-640.webp 640w, /assets/images/mob-rouge-960.webp 960w" sizes="(max-width: 760px) 62vw, 26vw" alt="Rangée de mobylettes dans l&#39;herbe, une Motobécane rouge au premier plan" width="960" height="1280" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figcaption>La Motobécane rouge, en tête de file</figcaption>
+    </figure><figure class="rangee-carte">
+      <figure class="media rangee-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/mob-rangee-1280.webp" srcset="/assets/images/mob-rangee-640.webp 640w, /assets/images/mob-rangee-960.webp 960w, /assets/images/mob-rangee-1280.webp 1280w" sizes="(max-width: 760px) 62vw, 26vw" alt="Quatre mobylettes bleues et rouge garées en rang, vues de haut" width="1280" height="1707" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figcaption>Les bleues et la rouge, prêtes à partir</figcaption>
+    </figure><figure class="rangee-carte">
+      <figure class="media rangee-media" style="--cadrage:50% 65%">
+  <picture>
+    <img src="/assets/images/mob-bleue-herbe-1280.webp" srcset="/assets/images/mob-bleue-herbe-640.webp 640w, /assets/images/mob-bleue-herbe-960.webp 960w, /assets/images/mob-bleue-herbe-1280.webp 1280w" sizes="(max-width: 760px) 62vw, 26vw" alt="Mobylette bleue à sacoche dans un pré, sous un ciel bleu" width="1280" height="1707" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figcaption>Une bleue et sa sacoche, au pré</figcaption>
+    </figure><figure class="rangee-carte">
+      <figure class="media rangee-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/mob-club-960.webp" srcset="/assets/images/mob-club-480.webp 480w, /assets/images/mob-club-640.webp 640w, /assets/images/mob-club-960.webp 960w" sizes="(max-width: 760px) 62vw, 26vw" alt="Gros plan sur une mobylette bleu marine" width="960" height="1280" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figcaption>Bleu marine, de près</figcaption>
+    </figure><figure class="rangee-carte">
+      <figure class="media rangee-media" style="--cadrage:50% 40%">
+  <picture>
+    <img src="/assets/images/chat-selle-1280.webp" srcset="/assets/images/chat-selle-640.webp 640w, /assets/images/chat-selle-960.webp 960w, /assets/images/chat-selle-1280.webp 1280w" sizes="(max-width: 760px) 62vw, 26vw" alt="Chat roux assis sur la selle d&#39;une mobylette" width="1280" height="1707" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figcaption>Le gardien des lieux</figcaption>
+    </figure><figure class="rangee-carte">
+      <figure class="media rangee-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/mob-sous-bois-640.webp" srcset="/assets/images/mob-sous-bois-480.webp 480w, /assets/images/mob-sous-bois-640.webp 640w" sizes="(max-width: 760px) 62vw, 26vw" alt="Mobylette arrêtée sur un chemin en sous-bois" width="640" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figcaption>Une halte en sous-bois</figcaption>
+    </figure></div>
+  </div>
+</section>
+<section class="section section--papier2 deroule" id="deroule">
+  <div class="conteneur">
+    <div class="section-tete"><p class="surtitre" data-anime>Le déroulé</p><h2 class="titre " data-anime="lignes">Comment ça <em>se passe</em></h2></div>
+    <div class="deroule-ligne" aria-hidden="true" data-effet="progression" data-visuel><span data-progression></span></div>
+    <ol class="deroule-grille" data-anime="cascade"><li class="deroule-etape">
+      <span class="deroule-n chiffres" aria-hidden="true">1</span>
+      <figure class="media deroule-media" style="--cadrage:50% 40%">
+  <picture>
+    <img src="/assets/images/terrasse-vintage-784.webp" srcset="/assets/images/terrasse-vintage-480.webp 480w, /assets/images/terrasse-vintage-640.webp 640w, /assets/images/terrasse-vintage-784.webp 784w" sizes="(max-width: 760px) 44vw, 22vw" alt="Coin café à l&#39;ancienne : guirlande de couleurs, vieille pompe rouge et tonneau en guise de table" width="784" height="1045" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <h3>Un café en terrasse</h3>
+      <p>On se retrouve sur la terrasse, autour d&#39;un café, et on vous explique le fonctionnement.</p>
+    </li><li class="deroule-etape">
+      <span class="deroule-n chiffres" aria-hidden="true">2</span>
+      <figure class="media deroule-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/g-casque-gants-960.webp" srcset="/assets/images/grok/g-casque-gants-480.webp 480w, /assets/images/grok/g-casque-gants-640.webp 640w, /assets/images/grok/g-casque-gants-960.webp 960w" sizes="(max-width: 760px) 44vw, 22vw" alt="Casque rétro crème à lunettes et gants de cuir posés sur une pierre" width="960" height="960" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <h3>Casque et gants</h3>
+      <p>Ils sont fournis avec chaque mobylette.</p>
+    </li><li class="deroule-etape">
+      <span class="deroule-n chiffres" aria-hidden="true">3</span>
+      <figure class="media deroule-media" style="--cadrage:50% 55%">
+  <picture>
+    <img src="/assets/images/mob-sous-bois-640.webp" srcset="/assets/images/mob-sous-bois-480.webp 480w, /assets/images/mob-sous-bois-640.webp 640w" sizes="(max-width: 760px) 44vw, 22vw" alt="Mobylette arrêtée sur un chemin en sous-bois" width="640" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <h3>La route</h3>
+      <p>Un parcours proposé ou votre propre itinéraire, jusqu&#39;à 70 km.</p>
+    </li><li class="deroule-etape">
+      <span class="deroule-n chiffres" aria-hidden="true">4</span>
+      <figure class="media deroule-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/mob-club-960.webp" srcset="/assets/images/mob-club-480.webp 480w, /assets/images/mob-club-640.webp 640w, /assets/images/mob-club-960.webp 960w" sizes="(max-width: 760px) 44vw, 22vw" alt="Gros plan sur une mobylette bleu marine" width="960" height="1280" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <h3>Le retour</h3>
+      <p>Vous ramenez la mobylette à l&#39;heure de fin de votre formule.</p>
+    </li></ol>
+  </div>
+</section>
+<svg class="route route--papier2 route--jonction" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" data-effet="route" data-grille="fil" data-visuel>
+  <mask id="route-4" maskUnits="userSpaceOnUse" x="-40" y="-40" width="1520" height="200"><path class="route-masque" d="M-20 60 C 160 120 360 14 620 70 S 1010 110 1220 50 S 1400 30 1460 60" pathLength="1" fill="none" stroke="#fff" stroke-width="40"/></mask>
+  <g mask="url(#route-4)"><path class="route-bord" d="M-20 60 C 160 120 360 14 620 70 S 1010 110 1220 50 S 1400 30 1460 60" fill="none"/><path class="route-ligne" d="M-20 60 C 160 120 360 14 620 70 S 1010 110 1220 50 S 1400 30 1460 60" fill="none"/></g>
+</svg>
+<section class="section sombre tarifs" id="tarifs">
+  <div class="conteneur">
+    <div class="section-tete"><p class="surtitre" data-anime>Tarifs en direct</p><h2 class="titre " data-anime="lignes">Votre sortie, <em>votre prix</em></h2><p data-anime>Choisissez la balade, la durée et le nombre de mobylettes : le total se met à jour.</p></div>
+    <div class="cdf composeur" data-module="composeur-de-formule" data-epingle data-caution="600" data-reserver="/reserver">
+  <script type="application/json" class="cdf__donnees">{"devise":"EUR","bases":{"demi":{"prix":50,"par":["mobylettes"]},"mi":{"prix":60,"par":["mobylettes"]},"journee":{"prix":70,"par":["mobylettes"]}},"options":{},"remises":[]}</script>
+  <div class="cdf__grille">
+    <form class="cdf__form" novalidate>
+      <fieldset class="cdf__groupe">
+        <legend class="cdf__legende"><span class="cdf__num" aria-hidden="true">1</span>La balade</legend>
+        <div class="cdf__choix-liste">
+          <label class="cdf__choix"><input type="radio" name="balade" value="fallavier" data-nom="Balade Fallavier" data-formules="mi journee" checked><span class="cdf__carte"><b class="cdf__nom">Fallavier</b><small>37 km</small></span></label>
+          <label class="cdf__choix"><input type="radio" name="balade" value="cremieu" data-nom="Village des brocanteurs et Crémieu" data-formules="mi journee"><span class="cdf__carte"><b class="cdf__nom">Brocanteurs et Crémieu</b><small>63 km</small></span></label>
+          <label class="cdf__choix"><input type="radio" name="balade" value="libre" data-nom="Itinéraire libre" data-formules="demi mi journee"><span class="cdf__carte"><b class="cdf__nom">Itinéraire libre</b><small>70 km maximum</small></span></label>
+        </div>
+      </fieldset>
+      <fieldset class="cdf__groupe">
+        <legend class="cdf__legende"><span class="cdf__num" aria-hidden="true">2</span>La durée</legend>
+        <div class="cdf__choix-liste">
+          <label class="cdf__choix" data-formule="demi"><input type="radio" name="base" value="demi" data-nom="Demi-journée" data-superpose><span class="cdf__carte"><b class="cdf__nom">Demi-journée</b><small>8 h 30 – 12 h 30 ou 14 h 30 – 18 h</small><span class="cdf__prix" data-prix></span></span></label>
+          <label class="cdf__choix" data-formule="mi"><input type="radio" name="base" value="mi" data-nom="Mi-journée" data-superpose checked><span class="cdf__carte"><b class="cdf__nom">Mi-journée</b><small>10 h – 16 h</small><span class="cdf__prix" data-prix></span></span></label>
+          <label class="cdf__choix" data-formule="journee"><input type="radio" name="base" value="journee" data-nom="Journée" data-superpose><span class="cdf__carte"><b class="cdf__nom">Journée</b><small>9 h – 18 h</small><span class="cdf__prix" data-prix></span></span></label>
+        </div>
+        <p class="cdf__note" data-note-demi>La demi-journée est proposée avec l&#39;itinéraire libre.</p>
+      </fieldset>
+      <fieldset class="cdf__groupe">
+        <legend class="cdf__legende"><span class="cdf__num" aria-hidden="true">3</span>Combien de mobylettes</legend>
+        <div class="cdf__qte">
+          <label for="sortie-mobylettes">Mobylettes <small>de 1 à 5</small></label>
+          <div class="cdf__pas">
+            <button type="button" data-pas="-1" aria-label="Une mobylette de moins">−</button>
+            <input id="sortie-mobylettes" name="mobylettes" type="number" min="1" max="5" step="1" value="2" inputmode="numeric" data-unites="mobylette|mobylettes">
+            <button type="button" data-pas="1" aria-label="Une mobylette de plus">+</button>
+          </div>
+        </div>
+      </fieldset>
+      <div class="cdf__mini" aria-hidden="true">
+        <span class="cdf__mini-total"><small>Total estimé</small> <b data-total-mini>—</b></span>
+        <a class="bouton bouton--petit" href="#sortie-recap" tabindex="-1" data-sans-transition>Voir le détail</a>
+      </div>
+    </form>
+    <aside class="cdf__recap ticket" id="sortie-recap" data-tient aria-labelledby="sortie-recap-titre">
+      <p class="surtitre" id="sortie-recap-titre">Votre sortie</p>
+      <p class="cdf__total chiffres"><span class="socle-sr">Total estimé : </span><span data-total data-prix>—</span></p>
+      <p class="cdf__par" data-par-unite></p>
+      <p class="cdf__caution">Caution (600 € par mobylette) : <strong class="chiffres" data-caution-total>1200 €</strong></p>
+      <p class="cdf__mention">Prix par mobylette, à confirmer à la réservation.</p>
+      <a href="/reserver" class="bouton cdf__appel" data-libelle="Réserver" data-lien-reserver data-survol="magnetique">Demander cette sortie</a>
+      <ul class="cdf__lignes" data-lignes aria-label="Détail du calcul"></ul>
+      <p class="socle-sr" aria-live="polite" aria-atomic="true" data-annonce></p>
+    </aside>
+  </div>
+</div>
+    <noscript><div class="grille-tarifs" data-anime="cascade"><div class="grille-tarifs-carte"><h3>Fallavier</h3><p class="grille-tarifs-km">37 km</p><ul class="formules"><li class="formule"><span class="formule-nom"><strong>Mi-journée</strong><small>10 h – 16 h</small></span><span class="formule-prix chiffres" data-prix>60 €</span></li><li class="formule"><span class="formule-nom"><strong>Journée</strong><small>9 h – 18 h</small></span><span class="formule-prix chiffres" data-prix>70 €</span></li></ul></div><div class="grille-tarifs-carte"><h3>Brocanteurs et Crémieu</h3><p class="grille-tarifs-km">63 km</p><ul class="formules"><li class="formule"><span class="formule-nom"><strong>Mi-journée</strong><small>10 h – 16 h</small></span><span class="formule-prix chiffres" data-prix>60 €</span></li><li class="formule"><span class="formule-nom"><strong>Journée</strong><small>9 h – 18 h</small></span><span class="formule-prix chiffres" data-prix>70 €</span></li></ul></div><div class="grille-tarifs-carte"><h3>Itinéraire libre</h3><p class="grille-tarifs-km">70 km maximum</p><ul class="formules"><li class="formule"><span class="formule-nom"><strong>Demi-journée</strong><small>8 h 30 – 12 h 30 ou 14 h 30 – 18 h</small></span><span class="formule-prix chiffres" data-prix>50 €</span></li><li class="formule"><span class="formule-nom"><strong>Mi-journée</strong><small>10 h – 16 h</small></span><span class="formule-prix chiffres" data-prix>60 €</span></li><li class="formule"><span class="formule-nom"><strong>Journée</strong><small>9 h – 18 h</small></span><span class="formule-prix chiffres" data-prix>70 €</span></li></ul></div></div></noscript>
+  </div>
+</section>
+<section class="section section--papier2 faq" id="questions">
+  <div class="conteneur faq-grille">
+    <div class="section-tete faq-tete"><p class="surtitre" data-anime>Questions pratiques</p><h2 class="titre " data-anime="lignes">Avant de <em>partir</em></h2>
+      <figure class="media faq-media" data-anime="rideau" style="--cadrage:50% 38%">
+  <picture>
+    <img src="/assets/images/chat-selle-1280.webp" srcset="/assets/images/chat-selle-640.webp 640w, /assets/images/chat-selle-960.webp 960w, /assets/images/chat-selle-1280.webp 1280w" sizes="(max-width: 760px) 50vw, 24vw" alt="Chat roux assis sur la selle d&#39;une mobylette" width="1280" height="1707" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+    <div class="questions"><details class="question" data-anime><summary><span>Qui peut louer une mobylette ?</span><i aria-hidden="true"></i></summary><div class="question-reponse"><p>La location est réservée aux personnes de plus de 18 ans.</p></div></details><details class="question" data-anime><summary><span>Y a-t-il une caution ?</span><i aria-hidden="true"></i></summary><div class="question-reponse"><p>Oui : 600 € par mobylette.</p></div></details><details class="question" data-anime><summary><span>Les mobylettes sont-elles assurées ?</span><i aria-hidden="true"></i></summary><div class="question-reponse"><p>Oui, elles sont couvertes par des assurances. On vous demande simplement d&#39;en prendre soin et de conduire de façon responsable.</p></div></details><details class="question" data-anime><summary><span>Faut-il venir avec son casque ?</span><i aria-hidden="true"></i></summary><div class="question-reponse"><p>Non : casques et gants sont fournis.</p></div></details><details class="question" data-anime><summary><span>Combien de mobylettes peut-on louer ?</span><i aria-hidden="true"></i></summary><div class="question-reponse"><p>Cinq mobylettes sont disponibles, selon la demande et le planning.</p></div></details><details class="question" data-anime><summary><span>Peut-on choisir son propre parcours ?</span><i aria-hidden="true"></i></summary><div class="question-reponse"><p>Oui, avec l&#39;itinéraire libre : 70 km maximum, à la demi-journée, à la mi-journée ou à la journée.</p></div></details><details class="question" data-anime><summary><span>Comment réserver ?</span><i aria-hidden="true"></i></summary><div class="question-reponse"><p>Par téléphone au 06 82 38 21 43 ou par e-mail à jplocmob@gmail.com.</p></div></details></div>
+  </div>
+</section>
+<section class="appel appel--photo" id="appel">
+  <figure class="media appel-media" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/g-appel-soir-mobile-640.webp 640w, /assets/images/grok/g-appel-soir-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/g-appel-soir-1280.webp" srcset="/assets/images/grok/g-appel-soir-640.webp 640w, /assets/images/grok/g-appel-soir-1280.webp 1280w, /assets/images/grok/g-appel-soir-1920.webp 1920w" sizes="100vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="conteneur appel-contenu">
+    <img class="appel-tampon" src="/assets/images/logo-240.png" alt="" width="132" height="132" loading="lazy" data-effet="tampon" data-tampon>
+    <p class="surtitre" data-anime>On y va ?</p>
+    <h2 class="titre " data-anime="lignes">Alors, <em>on roule ?</em></h2>
+    <p data-anime>Informations et réservation par téléphone ou par e-mail.</p>
+    <p class="appel-actions" data-anime>
+      <a href="/reserver" class="bouton" data-libelle="Réserver" data-survol="magnetique">Réserver une balade</a>
+      <a class="bouton bouton--contour" href="tel:+33682382143" data-survol="magnetique">06 82 38 21 43</a>
+    </p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-240.png" alt="" width="72" height="72" loading="lazy">
+      <p><strong>JP Loc Mob</strong></p>
+      <p>Location de mobylettes restaurées à Chèzeneuve et ses alentours, en Isère.</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil" aria-current="page">Accueil</a></li><li><a href="/balades-et-tarifs" data-libelle="Balades et tarifs">Balades et tarifs</a></li><li><a href="/les-mobylettes" data-libelle="Les mobylettes">Les mobylettes</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p><strong>Contact</strong></p>
+      <ul>
+        <li><a href="tel:+33682382143">06 82 38 21 43</a></li>
+        <li><a href="mailto:jplocmob@gmail.com">jplocmob@gmail.com</a></li>
+        <li><span class="pied-texte">Départ et retour à Chèzeneuve</span></li>
+      </ul>
+    </div>
+    <div>
+      <p><strong>Nous suivre</strong></p>
+      <ul>
+        <li><a href="https://www.facebook.com/profile.php?id=61550602001718" target="_blank" rel="noopener">Facebook<span class="visuellement-cache"> (nouvel onglet)</span></a></li>
+        <li><a href="https://www.instagram.com/jp_loc_mob/" target="_blank" rel="noopener">Instagram<span class="visuellement-cache"> (nouvel onglet)</span></a></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Mentions légales · à compléter<span aria-hidden="true"> &nbsp;|&nbsp; </span><br class="pied-saut">Politique de confidentialité · à compléter</p>
+    <p>Maquette : les informations marquées « à compléter » seront fournies par le client.</p>
+    <p>© JP Loc Mob</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33682382143">Appeler</a>
+  <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+</div>
+</body>
+</html>

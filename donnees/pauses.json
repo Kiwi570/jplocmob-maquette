@@ -1,0 +1,4 @@
+[
+  { "id": "duplex", "nom": "Duplex 87", "lieu": "Saint-Agnin-sur-Bion", "texte": "Cuisine locale et terrasse.", "image": "duplex-terrasse", "tel": "", "telLien": "" },
+  { "id": "bascule", "nom": "La Bascule", "lieu": "Saint-Alban-de-Roche", "texte": "Café en terrasse. Planche de charcuterie sur commande.", "image": "bascule-bar", "tel": "06 20 53 23 38", "telLien": "+33620532338", "telTexte": "Réservation au" }
+]

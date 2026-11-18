@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "JP Loc Mob",
+  "url": "https://jplocmob-maquette.vercel.app/",
+  "telephone": "+33682382143",
+  "email": "jplocmob@gmail.com",
+  "description": "Location de mobylettes restaurées et balades en Isère, à Chèzeneuve et ses alentours.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Chèzeneuve", "addressRegion": "Isère", "addressCountry": "FR" },
+  "priceRange": "50 € à 70 €",
+  "sameAs": ["https://www.facebook.com/profile.php?id=61550602001718", "https://www.instagram.com/jp_loc_mob/"]
+}

@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Réserver une balade : JP Loc Mob</title>
+<meta name="description" content="Choisissez votre balade, votre formule et le nombre de mobylettes : la demande de réservation se prépare en quelques étapes.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://jplocmob-maquette.vercel.app/reserver">
+<style>:root{--fond:#F3EDDC;--texte:#1F3B30;--voile-fond:#1F3B30;--ouverture-fond:#F3EDDC;--menu-fond:#1F3B30}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/bricolage-grotesque-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/polices/instrument-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/modules.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F3EDDC">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JP Loc Mob">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Réserver une balade : JP Loc Mob">
+<meta property="og:description" content="Choisissez votre balade, votre formule et le nombre de mobylettes : la demande de réservation se prépare en quelques étapes.">
+<meta property="og:url" content="https://jplocmob-maquette.vercel.app/reserver">
+<meta property="og:image" content="https://jplocmob-maquette.vercel.app/assets/partage/reserver-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Réserver une balade en mobylette avec JP Loc Mob">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"JP Loc Mob","url":"https://jplocmob-maquette.vercel.app/","telephone":"+33682382143","email":"jplocmob@gmail.com","description":"Location de mobylettes restaurées et balades en Isère, à Chèzeneuve et ses alentours.","address":{"@type":"PostalAddress","addressLocality":"Chèzeneuve","addressRegion":"Isère","addressCountry":"FR"},"priceRange":"50 € à 70 €","sameAs":["https://www.facebook.com/profile.php?id=61550602001718","https://www.instagram.com/jp_loc_mob/"]}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-240.png" alt="" width="88" height="88"><span data-voile-libelle>Réserver</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <svg class="ouverture-route" viewBox="0 0 1440 240" preserveAspectRatio="none"><path class="ouverture-route-bord" pathLength="1" d="M-20 150 C 220 40 420 230 720 120 S 1200 30 1460 130"/><path class="ouverture-route-ligne" pathLength="1" d="M-20 150 C 220 40 420 230 720 120 S 1200 30 1460 130"/></svg>
+  <span class="ouverture-encre"></span>
+  <img class="ouverture-logo" src="/assets/images/logo-240.png" alt="" width="132" height="132" data-ouverture-objet>
+  <p class="ouverture-ligne">Location de mobylettes en Isère</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo-240.png" alt="" width="46" height="46"><span>JP Loc Mob</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/balades-et-tarifs" data-libelle="Balades et tarifs">Balades et tarifs</a></li><li><a href="/les-mobylettes" data-libelle="Les mobylettes">Les mobylettes</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/balades-et-tarifs" class="menu-lien" data-libelle="Balades et tarifs">Balades et tarifs</a></li><li style="--i:2"><a href="/les-mobylettes" class="menu-lien" data-libelle="Les mobylettes">Les mobylettes</a></li><li style="--i:3"><a href="/reserver" class="menu-lien" data-libelle="Réserver" aria-current="page">Réserver</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33682382143">Appeler 06 82 38 21 43</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="reserver" id="debut">
+  <div class="conteneur reserver-grille">
+    <div class="reserver-principal">
+      <div class="reserver-tete">
+  <p class="surtitre" data-entree>Réserver</p>
+  <h1 class="tete-titre " data-anime="gsap"><span class="ligne-masque"><span class="tete-ligne">Votre balade, <em>en quatre étapes</em></span></span></h1>
+  <p class="tete-intro" data-entree>Préparez votre demande ici, ou appelez directement.</p>
+  <p class="tete-actions" data-entree>
+    <a class="bouton" href="tel:+33682382143" data-action-principale data-survol="magnetique">Appeler 06 82 38 21 43</a>
+    <a class="bouton bouton--contour" href="mailto:jplocmob@gmail.com">jplocmob@gmail.com</a>
+  </p>
+  <p class="hero-info" data-info-cle data-entree><span class="pastille" aria-hidden="true"></span>Maquette : la demande est simulée, rien n&#39;est envoyé</p>
+</div>
+      <div class="fpe" data-module="formulaire-par-etapes" id="demande" data-mailto="jplocmob@gmail.com" data-sujet="Demande de réservation">
+        <div class="fpe__carton">
+          <form class="fpe__form" action="#" method="post" novalidate>
+            <div class="fpe__progression">
+              <ol class="fpe__reperes" aria-label="Progression"></ol>
+              <div class="fpe__barre" aria-hidden="true"><span></span></div>
+              <p class="fpe__etat" aria-live="polite"></p>
+            </div>
+            <fieldset class="fpe__etape" data-etape="Balade">
+              <legend class="fpe__legende"><h2 class="fpe__titre">Quelle balade vous tente ?</h2></legend>
+              <div class="fpe__groupe fpe__cartes" data-libelle="Balade">
+                <label class="fpe__carte"><input type="radio" name="balade" value="fallavier" required><svg class="fpe__icone" viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26V12l3-2V6h3v3l4-3 4 3V6h3v4l3 2v14z"/><path d="M13 26v-6a3 3 0 0 1 6 0v6"/></svg><span class="fpe__carte-titre">Balade Fallavier</span><span class="fpe__carte-texte">37 km · Un château, un étang, des daims</span></label>
+                <label class="fpe__carte"><input type="radio" name="balade" value="cremieu"><svg class="fpe__icone" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 26V10h4v4h4v-4h4v4h4v-4h4v4h4v12z"/><path d="M14 26v-5a2 2 0 0 1 4 0v5"/></svg><span class="fpe__carte-titre">Village des brocanteurs et Crémieu</span><span class="fpe__carte-texte">63 km · Des trouvailles, puis des remparts</span></label>
+                <label class="fpe__carte"><input type="radio" name="balade" value="libre"><svg class="fpe__icone" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 28V16"/><path d="M16 16 8 6M16 16l8-10"/><path d="M5 9l3-3 3 3M21 9l3-3 3 3"/></svg><span class="fpe__carte-titre">Itinéraire libre</span><span class="fpe__carte-texte">70 km maximum · La route est à vous !</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="fpe__etape" data-etape="Formule">
+              <legend class="fpe__legende"><h2 class="fpe__titre">Pour combien de temps ?</h2></legend>
+              <div class="fpe__groupe fpe__cartes" data-libelle="Formule">
+                <label class="fpe__carte" data-formule="demi"><input type="radio" name="formule" value="demi" required><svg class="fpe__icone" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11"/><path d="M16 5a11 11 0 0 1 0 22z" fill="currentColor"/></svg><span class="fpe__carte-titre">Demi-journée · <span data-prix>50 €</span></span><span class="fpe__carte-texte">8 h 30 – 12 h 30 ou 14 h 30 – 18 h</span></label>
+                <label class="fpe__carte" data-formule="mi"><input type="radio" name="formule" value="mi"><svg class="fpe__icone" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11"/><path d="M16 9v7l5 3"/></svg><span class="fpe__carte-titre">Mi-journée · <span data-prix>60 €</span></span><span class="fpe__carte-texte">10 h – 16 h</span></label>
+                <label class="fpe__carte" data-formule="journee"><input type="radio" name="formule" value="journee"><svg class="fpe__icone" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="6"/><path d="M16 3v4M16 25v4M3 16h4M25 16h4M7 7l3 3M22 22l3 3M25 7l-3 3M10 22l-3 3"/></svg><span class="fpe__carte-titre">Journée · <span data-prix>70 €</span></span><span class="fpe__carte-texte">9 h – 18 h</span></label>
+              </div>
+              <p class="fpe__aide" data-note-demi>La demi-journée est proposée avec l&#39;itinéraire libre.</p>
+            </fieldset>
+            <fieldset class="fpe__etape" data-etape="Groupe">
+              <legend class="fpe__legende"><h2 class="fpe__titre">Combien de mobylettes, et quand ?</h2></legend>
+              <div class="fpe__grille">
+                <div class="fpe__champ"><label for="res-mobylettes">Nombre de mobylettes <i aria-hidden="true">*</i> <small>de 1 à 5</small></label><input id="res-mobylettes" name="mobylettes" type="number" min="1" max="5" step="1" value="2" inputmode="numeric" required></div>
+                <div class="fpe__champ"><label for="res-date">Date souhaitée</label><input id="res-date" name="date" type="date"></div>
+              </div>
+              <div class="fpe__champ"><label for="res-message">Un mot pour nous (facultatif)</label><textarea id="res-message" name="message" rows="3"></textarea></div>
+            </fieldset>
+            <fieldset class="fpe__etape" data-etape="Contact">
+              <legend class="fpe__legende"><h2 class="fpe__titre">Comment vous joindre ?</h2></legend>
+              <div class="fpe__grille">
+                <div class="fpe__champ"><label for="res-prenom">Prénom <i aria-hidden="true">*</i></label><input id="res-prenom" name="prenom" autocomplete="given-name" required></div>
+                <div class="fpe__champ"><label for="res-nom">Nom <i aria-hidden="true">*</i></label><input id="res-nom" name="nom" autocomplete="family-name" required></div>
+                <div class="fpe__champ"><label for="res-email">E-mail <i aria-hidden="true">*</i></label><input id="res-email" name="email" type="email" autocomplete="email" required></div>
+                <div class="fpe__champ"><label for="res-tel">Téléphone <i aria-hidden="true">*</i></label><input id="res-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" pattern="[0-9 +().\-]{8,20}" required></div>
+              </div>
+              <label class="fpe__case"><input type="checkbox" name="majeur" value="oui" required data-libelle="Plus de 18 ans"><span class="fpe__choix-texte">Je confirme que chaque conducteur a plus de 18 ans. <i aria-hidden="true">*</i></span></label>
+              <label class="fpe__case"><input type="checkbox" name="accord" value="oui" required data-libelle="Accord" data-hors-recap><span class="fpe__choix-texte">J&#39;accepte que ces informations servent uniquement à répondre à ma demande. <i aria-hidden="true">*</i></span></label>
+              <p class="fpe__aide">Vos informations ne servent qu&#39;à répondre à cette demande. Politique de confidentialité : à compléter. Les champs marqués d&#39;un astérisque sont obligatoires.</p>
+            </fieldset>
+            <fieldset class="fpe__etape" data-etape="Résumé" data-recap>
+              <legend class="fpe__legende"><h2 class="fpe__titre">Tout est juste ?</h2></legend>
+              <div class="fpe__recap"><p>Le récapitulatif de vos réponses s&#39;affiche ici.</p></div>
+            </fieldset>
+            <div class="fpe__nav">
+              <button class="fpe__bouton fpe__bouton--ligne" type="button" data-precedent>Retour</button>
+              <button class="fpe__bouton" type="button" data-suivant data-retour="Revenir au récapitulatif">Continuer</button>
+              <button class="fpe__bouton" type="submit">Envoyer la demande</button>
+            </div>
+          </form>
+          <div class="fpe__fin" hidden>
+            <svg class="fpe__coche" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28"/><path d="M20 33l8 8 16-17"/></svg>
+            <h2>Merci, votre demande est prête.</h2>
+            <p data-resume></p>
+            <p>Maquette : rien n&#39;a été envoyé. Sur le site en ligne, la demande partirait chez JP Loc Mob, qui vous répondrait par téléphone ou par e-mail.</p>
+            <div class="fpe__fin-actions">
+              <a class="fpe__bouton" href="mailto:jplocmob@gmail.com" data-mailto hidden>Envoyer par e-mail</a>
+              <button class="fpe__bouton fpe__bouton--ligne" type="button" data-recommencer>Nouvelle demande</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside class="reserver-cote" aria-label="Bon de sortie">
+      <figure class="media reserver-media masque-ecran-tres-bas" data-fx="parallaxe" data-fx-force="6" data-iris-centre style="--cadrage:50% 68%">
+  <picture>
+    <img src="/assets/images/mob-bleue-herbe-1280.webp" srcset="/assets/images/mob-bleue-herbe-640.webp 640w, /assets/images/mob-bleue-herbe-960.webp 960w, /assets/images/mob-bleue-herbe-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 34vw" alt="Mobylette bleue à sacoche dans un pré, sous un ciel bleu" width="1280" height="1707" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+      <div class="ticket bon" data-bon data-grille="retour">
+        <script type="application/json" class="bon-donnees">{"caution":600,"formules":{"demi":{"nom":"Demi-journée","prix":50},"mi":{"nom":"Mi-journée","prix":60},"journee":{"nom":"Journée","prix":70}},"balades":{"fallavier":{"nom":"Balade Fallavier","formules":["mi","journee"]},"cremieu":{"nom":"Village des brocanteurs et Crémieu","formules":["mi","journee"]},"libre":{"nom":"Itinéraire libre","formules":["demi","mi","journee"]}}}</script>
+        <p class="bon-titre">Bon de sortie</p>
+        <dl class="bon-lignes">
+          <div><dt>Balade</dt><dd data-bon-balade>à choisir</dd></div>
+          <div><dt>Formule</dt><dd data-bon-formule>à choisir</dd></div>
+          <div><dt>Mobylettes</dt><dd class="chiffres" data-bon-mobs>2</dd></div>
+        </dl>
+        <p class="bon-total"><span>Total estimé</span><strong class="chiffres" data-bon-total data-prix data-vide>—</strong></p>
+        <p class="bon-caution"><span>Caution</span><span class="chiffres" data-bon-caution>1200 €</span></p>
+        <p class="bon-note">Prix par mobylette, à confirmer à la réservation.</p>
+        <img class="bon-tampon" src="/assets/images/logo-240.png" alt="" width="96" height="96" loading="lazy" data-bon-tampon>
+      </div>
+    </aside>
+  </div>
+</section>
+<svg class="route route--papier route--jonction" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" data-effet="route" data-grille="fil" data-visuel>
+  <mask id="route-12" maskUnits="userSpaceOnUse" x="-40" y="-40" width="1520" height="200"><path class="route-masque" d="M-20 78 C 180 10 380 120 640 60 S 1080 0 1460 70" pathLength="1" fill="none" stroke="#fff" stroke-width="40"/></mask>
+  <g mask="url(#route-12)"><path class="route-bord" d="M-20 78 C 180 10 380 120 640 60 S 1080 0 1460 70" fill="none"/><path class="route-ligne" d="M-20 78 C 180 10 380 120 640 60 S 1080 0 1460 70" fill="none"/></g>
+</svg>
+<section class="section sombre compris" id="compris">
+  <div class="conteneur compris-grille">
+    <div>
+      <p class="surtitre" data-anime>Compris dans le prix</p>
+      <h2 class="titre " data-anime="lignes">Ce qui vous <em>attend</em></h2>
+      <ul class="compris-liste" data-anime="cascade"><li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11"/><path d="M7 12.5l3.2 3.2L17 9"/></svg>Une mobylette restaurée</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11"/><path d="M7 12.5l3.2 3.2L17 9"/></svg>Casque et gants</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11"/><path d="M7 12.5l3.2 3.2L17 9"/></svg>Un café et les explications avant le départ</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11"/><path d="M7 12.5l3.2 3.2L17 9"/></svg>Des mobylettes assurées</li></ul>
+    </div>
+    <div class="compris-appel" data-anime>
+      <img class="compris-tampon" src="/assets/images/logo-240.png" alt="" width="110" height="110" loading="lazy" data-effet="tampon" data-tampon>
+      <h3>Plus simple : un appel</h3>
+      <p>Informations et réservation par téléphone ou par e-mail.</p>
+      <p class="compris-numero"><a class="chiffres" href="tel:+33682382143">06 82 38 21 43</a></p>
+      <p><a href="mailto:jplocmob@gmail.com">jplocmob@gmail.com</a></p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-240.png" alt="" width="72" height="72" loading="lazy">
+      <p><strong>JP Loc Mob</strong></p>
+      <p>Location de mobylettes restaurées à Chèzeneuve et ses alentours, en Isère.</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/balades-et-tarifs" data-libelle="Balades et tarifs">Balades et tarifs</a></li><li><a href="/les-mobylettes" data-libelle="Les mobylettes">Les mobylettes</a></li><li><a href="/reserver" data-libelle="Réserver" aria-current="page">Réserver</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p><strong>Contact</strong></p>
+      <ul>
+        <li><a href="tel:+33682382143">06 82 38 21 43</a></li>
+        <li><a href="mailto:jplocmob@gmail.com">jplocmob@gmail.com</a></li>
+        <li><span class="pied-texte">Départ et retour à Chèzeneuve</span></li>
+      </ul>
+    </div>
+    <div>
+      <p><strong>Nous suivre</strong></p>
+      <ul>
+        <li><a href="https://www.facebook.com/profile.php?id=61550602001718" target="_blank" rel="noopener">Facebook<span class="visuellement-cache"> (nouvel onglet)</span></a></li>
+        <li><a href="https://www.instagram.com/jp_loc_mob/" target="_blank" rel="noopener">Instagram<span class="visuellement-cache"> (nouvel onglet)</span></a></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Mentions légales · à compléter<span aria-hidden="true"> &nbsp;|&nbsp; </span><br class="pied-saut">Politique de confidentialité · à compléter</p>
+    <p>Maquette : les informations marquées « à compléter » seront fournies par le client.</p>
+    <p>© JP Loc Mob</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33682382143">Appeler</a>
+  <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+</div>
+</body>
+</html>

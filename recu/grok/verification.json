@@ -1,0 +1,293 @@
+{
+  "date": "2026-11-17T20:40:22.321Z",
+  "plan": "/home/claude/jplocmob-maquette/plan-images.json",
+  "attendus": 11,
+  "recus": 11,
+  "planches": [
+    "planche.jpg"
+  ],
+  "inconnus": [],
+  "manquants": [],
+  "a_regenerer": [
+    {
+      "fichier": "g-route-campagne.jpg",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "consigne_corrigee": "A narrow single-lane country road winding gently between hedgerows, cornfields and walnut trees over low rolling hills, seen from low height in the middle of the lane, warm low sun from the side, long soft shadows across the old asphalt, a far hazy line of blue hills on the horizon, the scale of a small village lane and nothing like a highway or a mountain pass, no vehicles, no road signs, no painted lines on the road, no people. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "g-route-campagne-mobile.jpg",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "A narrow single-lane country road winding gently between hedgerows, cornfields and walnut trees over low rolling hills, seen from low height in the middle of the lane, warm low sun from the side, long soft shadows across the old asphalt, a far hazy line of blue hills on the horizon, the scale of a small village lane and nothing like a highway or a mountain pass, no vehicles, no road signs, no painted lines on the road, no people. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "g-appel-soir.jpg",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "consigne_corrigee": "A straight narrow country lane between two rows of tall poplars at sunset, golden backlight flaring softly between the trunks, long striped shadows across the road, warm dust floating in the air, fields on both sides, the scale of a small rural lane, no vehicles, no road signs, no painted lines on the road, no people. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "g-appel-soir-mobile.jpg",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "A straight narrow country lane between two rows of tall poplars at sunset, golden backlight flaring softly between the trunks, long striped shadows across the road, warm dust floating in the air, fields on both sides, the scale of a small rural lane, no vehicles, no road signs, no painted lines on the road, no people. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "g-collines.jpg",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "consigne_corrigee": "Wide view from a small hilltop lane over a patchwork of low wooded hills, meadows, cornfields and a few scattered farm roofs, one thin lane curving away through the fields, late afternoon light, a far hazy line of higher hills on the horizon, no castle, no church tower, no recognisable village, no vehicles, no road signs, no people. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. A gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "g-collines-mobile.jpg",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "Wide view from a small hilltop lane over a patchwork of low wooded hills, meadows, cornfields and a few scattered farm roofs, one thin lane curving away through the fields, late afternoon light, a far hazy line of higher hills on the horizon, no castle, no church tower, no recognisable village, no vehicles, no road signs, no people. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. A gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "g-casque-gants.jpg",
+      "problemes": [
+        "ratio 0.8 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "A plain vintage open-face helmet in cream white without any logo and a pair of worn brown leather gloves resting on a weathered wooden bench in the grass, soft morning side light, shallow depth of field, no brand names, no lettering, no people. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "g-404.jpg",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "consigne_corrigee": "A grassy dead-end farm track ending at a closed old wooden field gate, one calm cow looking over the gate straight at the camera, rolling fields behind, warm light, a gentle touch of humour, no vehicles, no road signs, no people. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "g-404-mobile.jpg",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "A grassy dead-end farm track ending at a closed old wooden field gate, one calm cow looking over the gate straight at the camera, rolling fields behind, warm light, a gentle touch of humour, no vehicles, no road signs, no people. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    }
+  ],
+  "images": [
+    {
+      "nom": "g-route-campagne",
+      "attendu": "g-route-campagne.jpg",
+      "fichier": "g-route-campagne.jpg",
+      "priorite": "Indispensable",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1600,
+      "hauteur": 900,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A narrow single-lane country road winding gently between hedgerows, cornfields and walnut trees over low rolling hills, seen from low height in the middle of the lane, warm low sun from the side, long soft shadows across the old asphalt, a far hazy line of blue hills on the horizon, the scale of a small village lane and nothing like a highway or a mountain pass, no vehicles, no road signs, no painted lines on the road, no people. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "g-route-campagne",
+      "mobile": true,
+      "attendu": "g-route-campagne-mobile.jpg",
+      "fichier": "g-route-campagne-mobile.jpg",
+      "priorite": "Indispensable",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1600,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A narrow single-lane country road winding gently between hedgerows, cornfields and walnut trees over low rolling hills, seen from low height in the middle of the lane, warm low sun from the side, long soft shadows across the old asphalt, a far hazy line of blue hills on the horizon, the scale of a small village lane and nothing like a highway or a mountain pass, no vehicles, no road signs, no painted lines on the road, no people. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "g-route-libre",
+      "attendu": "g-route-libre.jpg",
+      "fichier": "g-route-libre.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [],
+      "largeur": 1000,
+      "hauteur": 1500,
+      "boites": []
+    },
+    {
+      "nom": "g-appel-soir",
+      "attendu": "g-appel-soir.jpg",
+      "fichier": "g-appel-soir.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1600,
+      "hauteur": 900,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A straight narrow country lane between two rows of tall poplars at sunset, golden backlight flaring softly between the trunks, long striped shadows across the road, warm dust floating in the air, fields on both sides, the scale of a small rural lane, no vehicles, no road signs, no painted lines on the road, no people. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "g-appel-soir",
+      "mobile": true,
+      "attendu": "g-appel-soir-mobile.jpg",
+      "fichier": "g-appel-soir-mobile.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1600,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A straight narrow country lane between two rows of tall poplars at sunset, golden backlight flaring softly between the trunks, long striped shadows across the road, warm dust floating in the air, fields on both sides, the scale of a small rural lane, no vehicles, no road signs, no painted lines on the road, no people. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "g-collines",
+      "attendu": "g-collines.jpg",
+      "fichier": "g-collines.jpg",
+      "priorite": "Indispensable",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1600,
+      "hauteur": 900,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "Wide view from a small hilltop lane over a patchwork of low wooded hills, meadows, cornfields and a few scattered farm roofs, one thin lane curving away through the fields, late afternoon light, a far hazy line of higher hills on the horizon, no castle, no church tower, no recognisable village, no vehicles, no road signs, no people. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. A gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "g-collines",
+      "mobile": true,
+      "attendu": "g-collines-mobile.jpg",
+      "fichier": "g-collines-mobile.jpg",
+      "priorite": "Indispensable",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1600,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "Wide view from a small hilltop lane over a patchwork of low wooded hills, meadows, cornfields and a few scattered farm roofs, one thin lane curving away through the fields, late afternoon light, a far hazy line of higher hills on the horizon, no castle, no church tower, no recognisable village, no vehicles, no road signs, no people. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. A gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "g-terrasse",
+      "attendu": "g-terrasse.jpg",
+      "fichier": "g-terrasse.jpg",
+      "priorite": "Conseillée",
+      "problemes": [],
+      "indications": [],
+      "largeur": 1000,
+      "hauteur": 1500,
+      "boites": []
+    },
+    {
+      "nom": "g-casque-gants",
+      "attendu": "g-casque-gants.jpg",
+      "fichier": "g-casque-gants.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 0.8 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1000,
+      "hauteur": 1250,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A plain vintage open-face helmet in cream white without any logo and a pair of worn brown leather gloves resting on a weathered wooden bench in the grass, soft morning side light, shallow depth of field, no brand names, no lettering, no people. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "g-404",
+      "attendu": "g-404.jpg",
+      "fichier": "g-404.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1600,
+      "hauteur": 900,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A grassy dead-end farm track ending at a closed old wooden field gate, one calm cow looking over the gate straight at the camera, rolling fields behind, warm light, a gentle touch of humour, no vehicles, no road signs, no people. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "g-404",
+      "mobile": true,
+      "attendu": "g-404-mobile.jpg",
+      "fichier": "g-404-mobile.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1600,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A grassy dead-end farm track ending at a closed old wooden field gate, one calm cow looking over the gate straight at the camera, rolling fields behind, warm light, a gentle touch of humour, no vehicles, no road signs, no people. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, nostalgic and sunny mood, palette of cream paper, deep fir green, warm brick red and a touch of warm yellow, low golden late-afternoon sun, tactile weathered wood, worn leather and sun-warmed asphalt, set in a gentle lowland countryside of wooded hills, hedgerows, cornfields and walnut trees in south-eastern France on a late summer afternoon, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    }
+  ]
+}

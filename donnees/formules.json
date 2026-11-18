@@ -1,0 +1,9 @@
+{
+  "caution": 600,
+  "mobsMax": 5,
+  "formules": {
+    "demi": { "nom": "Demi-journée", "horaires": "8 h 30 – 12 h 30 ou 14 h 30 – 18 h", "prix": 50, "note": "Matin ou après-midi" },
+    "mi": { "nom": "Mi-journée", "horaires": "10 h – 16 h", "prix": 60, "note": "Le milieu de la journée" },
+    "journee": { "nom": "Journée", "horaires": "9 h – 18 h", "prix": 70, "note": "Toute la journée" }
+  }
+}

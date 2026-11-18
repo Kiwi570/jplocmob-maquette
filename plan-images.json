@@ -1,0 +1,321 @@
+[
+ {
+  "source": "recu/logo-clair.png",
+  "nom": "logo",
+  "role": "logo",
+  "alt": "JP Loc Mob"
+ },
+ {
+  "source": "recu/balades-tarifs.jpg",
+  "nom": "accueil-ouverture",
+  "role": "ouverture",
+  "ratio": "4:3",
+  "mobile": false,
+  "page": "accueil",
+  "beaute": 4,
+  "alt": "Mobylette gris-bleu à sacoches de cuir, posée dans l'herbe devant une palissade en bois"
+ },
+ {
+  "source": "recu/balade-nous-5.jpg",
+  "nom": "mob-rangee",
+  "role": "carte-service",
+  "ratio": "3:4",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "page": "les-mobylettes",
+  "beaute": 4,
+  "alt": "Quatre mobylettes bleues et rouge garées en rang, vues de haut"
+ },
+ {
+  "source": "recu/balade-nous-2.jpg",
+  "nom": "mob-rouge",
+  "role": "galerie",
+  "ratio": "3:4",
+  "beaute": 4,
+  "alt": "Rangée de mobylettes dans l'herbe, une Motobécane rouge au premier plan"
+ },
+ {
+  "source": "recu/balade-nous-4.jpg",
+  "nom": "mob-bleue-herbe",
+  "role": "carte-service",
+  "ratio": "3:4",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "page": "reserver",
+  "beaute": 4,
+  "alt": "Mobylette bleue à sacoche dans un pré, sous un ciel bleu"
+ },
+ {
+  "source": "recu/balade-nous-3.jpg",
+  "nom": "mob-club",
+  "role": "galerie",
+  "ratio": "3:4",
+  "beaute": 3,
+  "alt": "Gros plan sur une mobylette bleu marine"
+ },
+ {
+  "source": "recu/balade-nous-6.jpg",
+  "nom": "mob-sous-bois",
+  "role": "galerie",
+  "ratio": "3:4",
+  "largeurs": [
+   480,
+   640
+  ],
+  "beaute": 3,
+  "alt": "Mobylette arrêtée sur un chemin en sous-bois"
+ },
+ {
+  "source": "recu/contactez-nous.jpg",
+  "nom": "chat-selle",
+  "role": "carte-service",
+  "ratio": "3:4",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "page": "contact",
+  "beaute": 4,
+  "alt": "Chat roux assis sur la selle d'une mobylette"
+ },
+ {
+  "source": "recu/balade-nous.jpg",
+  "nom": "terrasse-vintage",
+  "role": "carte-service",
+  "ratio": "3:4",
+  "beaute": 3,
+  "alt": "Coin café à l'ancienne : guirlande de couleurs, vieille pompe rouge et tonneau en guise de table"
+ },
+ {
+  "source": "recu/image.jpg",
+  "nom": "loueur",
+  "role": "carte-service",
+  "ratio": "3:4",
+  "beaute": 3,
+  "alt": "Le loueur debout derrière ses mobylettes alignées"
+ },
+ {
+  "source": "recu/balades-tarifs-3.jpg",
+  "nom": "fallavier-chateau",
+  "role": "galerie",
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280
+  ],
+  "beaute": 4,
+  "alt": "Le château de Fallavier vu du ciel, au-dessus de la campagne"
+ },
+ {
+  "source": "recu/balades-tarifs-11.jpg",
+  "nom": "moidiere-daims",
+  "role": "vignette",
+  "largeurs": [
+   480
+  ],
+  "beaute": 3,
+  "alt": "Daims dans le parc du château de Moidière"
+ },
+ {
+  "source": "recu/balades-tarifs-10.jpg",
+  "nom": "panorama",
+  "role": "vignette",
+  "ratio": "16:9",
+  "largeurs": [
+   480,
+   640
+  ],
+  "beaute": 3,
+  "alt": "Vue sur la campagne et les collines du Nord-Isère"
+ },
+ {
+  "source": "recu/balades-tarifs-2.jpg",
+  "nom": "cremieu-rue",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "largeurs": [
+   640,
+   960
+  ],
+  "beaute": 4,
+  "alt": "Ruelle pavée de Crémieu, les ruines du château sur la colline"
+ },
+ {
+  "source": "recu/balades-tarifs-9.webp",
+  "nom": "cremieu-cloitre",
+  "role": "vignette",
+  "ratio": "16:9",
+  "largeurs": [
+   480,
+   640
+  ],
+  "beaute": 3,
+  "alt": "Cloître et jardin fleuri à Crémieu"
+ },
+ {
+  "source": "recu/balades-tarifs-5.jpg",
+  "nom": "brocanteurs-enseigne",
+  "role": "galerie",
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280
+  ],
+  "beaute": 3,
+  "alt": "L'entrée du village des brocanteurs et ses étals"
+ },
+ {
+  "source": "recu/balades-tarifs-8.jpg",
+  "nom": "brocanteurs-hangar",
+  "role": "vignette",
+  "largeurs": [
+   480,
+   640
+  ],
+  "beaute": 3,
+  "alt": "Hangar du village des brocanteurs, un avion posé sur le toit"
+ },
+ {
+  "source": "recu/balades-tarifs-4.jpg",
+  "nom": "bascule-bar",
+  "role": "vignette",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   800
+  ],
+  "beaute": 3,
+  "alt": "Le comptoir du café La Bascule"
+ },
+ {
+  "source": "recu/duplex.jpg",
+  "nom": "duplex-terrasse",
+  "role": "vignette",
+  "ratio": "16:9",
+  "largeurs": [
+   480,
+   640
+  ],
+  "beaute": 3,
+  "alt": "La terrasse du Duplex 87, sous les parasols"
+ },
+ {
+  "source": "recu/grok/g-route-campagne.jpg",
+  "source_mobile": "recu/grok/g-route-campagne-mobile.jpg",
+  "nom": "grok/g-route-campagne",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "mobile": true,
+  "page": "Accueil",
+  "emplacement": "bande plein cadre du manifeste",
+  "priorite": "Indispensable",
+  "alt": "Petite route de campagne entre les haies et les noyers, au soleil du soir",
+  "consigne_scene": "A narrow single-lane country road winding gently between hedgerows, cornfields and walnut trees over low rolling hills, seen from low height in the middle of the lane, warm low sun from the side, long soft shadows across the old asphalt, a far hazy line of blue hills on the horizon, the scale of a small village lane and nothing like a highway or a mountain pass, no vehicles, no road signs, no painted lines on the road, no people",
+  "beaute": 5
+ },
+ {
+  "source": "recu/grok/g-route-libre.jpg",
+  "nom": "grok/g-route-libre",
+  "role": "carte-service",
+  "ratio": "2:3",
+  "page": "Accueil et Balades et tarifs",
+  "emplacement": "carte de la balade « Itinéraire libre »",
+  "priorite": "Indispensable",
+  "alt": "Petite route de campagne qui file sous un grand noyer, le long d'un champ de maïs",
+  "consigne_scene": "A quiet fork where two small country lanes split in front of an old dry-stone wall and a large walnut tree, tall grass and wild flowers along the verges, each lane leading toward a different low wooded hill, warm late light, no vehicles, no signposts, no painted lines on the road, no people",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   960,
+   1280
+  ]
+ },
+ {
+  "source": "recu/grok/g-appel-soir.jpg",
+  "source_mobile": "recu/grok/g-appel-soir-mobile.jpg",
+  "nom": "grok/g-appel-soir",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "mobile": true,
+  "zone_texte": "haut",
+  "page": "Accueil",
+  "emplacement": "fond de l'appel final",
+  "priorite": "Conseillée",
+  "alt": "Coucher de soleil sur les collines boisées, derrière un muret de pierres",
+  "consigne_scene": "A straight narrow country lane between two rows of tall poplars at sunset, golden backlight flaring softly between the trunks, long striped shadows across the road, warm dust floating in the air, fields on both sides, the scale of a small rural lane, no vehicles, no road signs, no painted lines on the road, no people",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/g-collines.jpg",
+  "source_mobile": "recu/grok/g-collines-mobile.jpg",
+  "nom": "grok/g-collines",
+  "role": "ouverture",
+  "ratio": "16:9",
+  "mobile": true,
+  "zone_texte": "haut",
+  "page": "Balades et tarifs",
+  "emplacement": "bandeau d'ouverture sous le grand titre",
+  "priorite": "Indispensable",
+  "alt": "Collines boisées, prés et champs de maïs traversés par une petite route",
+  "consigne_scene": "Wide view from a small hilltop lane over a patchwork of low wooded hills, meadows, cornfields and a few scattered farm roofs, one thin lane curving away through the fields, late afternoon light, a far hazy line of higher hills on the horizon, no castle, no church tower, no recognisable village, no vehicles, no road signs, no people",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/g-terrasse.jpg",
+  "nom": "grok/g-terrasse",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "page": "Les mobylettes",
+  "emplacement": "section « Le café avant la route »",
+  "priorite": "Conseillée",
+  "alt": "Tasse de café et biscuits sur une table en bois, devant une maison de pierre aux volets verts",
+  "consigne_scene": "Two small espresso cups on saucers and a sugar bowl on an old round metal bistro table, in a shaded garden terrace with a string of coloured bulbs overhead and a weathered wooden fence behind, warm dappled morning light, a 1970s feeling, shallow depth of field, no brand names, no lettering, no people",
+  "beaute": 3,
+  "largeurs": [
+   480,
+   640
+  ],
+  "cadrage": [
+   52,
+   60
+  ]
+ },
+ {
+  "source": "recu/grok/g-casque-gants.jpg",
+  "nom": "grok/g-casque-gants",
+  "role": "carte-service",
+  "ratio": "1:1",
+  "page": "Accueil et Les mobylettes",
+  "emplacement": "étape « Casque et gants fournis »",
+  "priorite": "Conseillée",
+  "alt": "Casque rétro crème à lunettes et gants de cuir posés sur une pierre",
+  "consigne_scene": "A plain vintage open-face helmet in cream white without any logo and a pair of worn brown leather gloves resting on a weathered wooden bench in the grass, soft morning side light, shallow depth of field, no brand names, no lettering, no people",
+  "beaute": 4,
+  "largeurs": [
+   480,
+   640,
+   960
+  ]
+ },
+ {
+  "source": "recu/grok/g-404.jpg",
+  "source_mobile": "recu/grok/g-404-mobile.jpg",
+  "nom": "grok/g-404",
+  "role": "404",
+  "mobile": true,
+  "page": "404",
+  "emplacement": "image de tête",
+  "priorite": "Conseillée",
+  "alt": "Petite route de campagne qui longe un vieux cabanon de pierre couvert de lierre",
+  "consigne_scene": "A grassy dead-end farm track ending at a closed old wooden field gate, one calm cow looking over the gate straight at the camera, rolling fields behind, warm light, a gentle touch of humour, no vehicles, no road signs, no people",
+  "beaute": 4
+ }
+]

@@ -1,0 +1,6 @@
+{
+  "siteActuel": "jplocmob.wordpress.com",
+  "pagesTypes": ["/", "/balades-et-tarifs", "/les-mobylettes", "/reserver"],
+  "effets": ["tampon", "route", "borne", "parcours"],
+  "grille": { "dispenses": {} }
+}

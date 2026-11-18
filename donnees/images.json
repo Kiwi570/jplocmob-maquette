@@ -1,0 +1,1836 @@
+{
+  "logo": {
+    "nom": "logo",
+    "source": "recu/logo-clair.png",
+    "role": "logo",
+    "alt": "JP Loc Mob",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "6a07a6393ee437c8",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "logo-240.webp",
+      "logo-480.webp"
+    ],
+    "poids": {
+      "logo-240.webp": 9748,
+      "logo-480.webp": 20852
+    },
+    "media": "c.media({ nom: 'logo', alt: \"JP Loc Mob\", sizes: '240px' })"
+  },
+  "accueil-ouverture": {
+    "nom": "accueil-ouverture",
+    "source": "recu/balades-tarifs.jpg",
+    "role": "ouverture",
+    "alt": "Mobylette gris-bleu à sacoches de cuir, posée dans l'herbe devant une palissade en bois",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "ce8f784021134592",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": null,
+    "cadrage": "52% 40%",
+    "sujet": {
+      "x": 1,
+      "y": 14.2,
+      "l": 99,
+      "h": 61.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.07,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.04,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1500,
+      "source": [
+        2000,
+        1500
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "accueil-ouverture-640.webp",
+      "accueil-ouverture-1280.webp",
+      "accueil-ouverture-1920.webp"
+    ],
+    "poids": {
+      "accueil-ouverture-640.webp": 97452,
+      "accueil-ouverture-1280.webp": 270806,
+      "accueil-ouverture-1920.webp": 399814
+    },
+    "media": "c.media({ nom: 'accueil-ouverture', alt: \"Mobylette gris-bleu à sacoches de cuir, posée dans l'herbe devant une palissade en bois\", cadrage: '52% 40%', sizes: '100vw', priorite: true })"
+  },
+  "mob-rangee": {
+    "nom": "mob-rangee",
+    "source": "recu/balade-nous-5.jpg",
+    "role": "carte-service",
+    "alt": "Quatre mobylettes bleues et rouge garées en rang, vues de haut",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "e2d6d3369f3d7639",
+    "ratio": "3:4",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "44% 43%",
+    "sujet": {
+      "x": 2.1,
+      "y": 6.9,
+      "l": 81.2,
+      "h": 84.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.13,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.04,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.04,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1500,
+      "height": 2000,
+      "source": [
+        1557,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "mob-rangee-640.webp",
+      "mob-rangee-960.webp",
+      "mob-rangee-1280.webp"
+    ],
+    "poids": {
+      "mob-rangee-640.webp": 217270,
+      "mob-rangee-960.webp": 336298,
+      "mob-rangee-1280.webp": 514676
+    },
+    "media": "c.media({ nom: 'mob-rangee', alt: \"Quatre mobylettes bleues et rouge garées en rang, vues de haut\", cadrage: '44% 43%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 4' })"
+  },
+  "mob-rouge": {
+    "nom": "mob-rouge",
+    "source": "recu/balade-nous-2.jpg",
+    "role": "galerie",
+    "alt": "Rangée de mobylettes dans l'herbe, une Motobécane rouge au premier plan",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "0c8a01f7c2ce955c",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "48% 44%",
+    "sujet": {
+      "x": 0,
+      "y": 14.6,
+      "l": 99.8,
+      "h": 75.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.03,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.02,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1500,
+      "height": 2000,
+      "source": [
+        1500,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "mob-rouge-480.webp",
+      "mob-rouge-640.webp",
+      "mob-rouge-960.webp"
+    ],
+    "poids": {
+      "mob-rouge-480.webp": 104334,
+      "mob-rouge-640.webp": 172284,
+      "mob-rouge-960.webp": 280602
+    },
+    "media": "c.media({ nom: 'mob-rouge', alt: \"Rangée de mobylettes dans l'herbe, une Motobécane rouge au premier plan\", cadrage: '48% 44%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "mob-bleue-herbe": {
+    "nom": "mob-bleue-herbe",
+    "source": "recu/balade-nous-4.jpg",
+    "role": "carte-service",
+    "alt": "Mobylette bleue à sacoche dans un pré, sous un ciel bleu",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "cb6bf07946faf8f8",
+    "ratio": "3:4",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "46% 53%",
+    "sujet": {
+      "x": 0,
+      "y": 43,
+      "l": 90.7,
+      "h": 29
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.35,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.3,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1500,
+      "height": 2000,
+      "source": [
+        1500,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "mob-bleue-herbe-640.webp",
+      "mob-bleue-herbe-960.webp",
+      "mob-bleue-herbe-1280.webp"
+    ],
+    "poids": {
+      "mob-bleue-herbe-640.webp": 138042,
+      "mob-bleue-herbe-960.webp": 283612,
+      "mob-bleue-herbe-1280.webp": 322506
+    },
+    "media": "c.media({ nom: 'mob-bleue-herbe', alt: \"Mobylette bleue à sacoche dans un pré, sous un ciel bleu\", cadrage: '46% 53%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 4' })"
+  },
+  "mob-club": {
+    "nom": "mob-club",
+    "source": "recu/balade-nous-3.jpg",
+    "role": "galerie",
+    "alt": "Gros plan sur une mobylette bleu marine",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "708a19424750986e",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "44% 49%",
+    "sujet": {
+      "x": 0,
+      "y": 14.8,
+      "l": 83.1,
+      "h": 73
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.1,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1500,
+      "height": 2000,
+      "source": [
+        1500,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "mob-club-480.webp",
+      "mob-club-640.webp",
+      "mob-club-960.webp"
+    ],
+    "poids": {
+      "mob-club-480.webp": 69604,
+      "mob-club-640.webp": 109858,
+      "mob-club-960.webp": 199208
+    },
+    "media": "c.media({ nom: 'mob-club', alt: \"Gros plan sur une mobylette bleu marine\", cadrage: '44% 49%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "mob-sous-bois": {
+    "nom": "mob-sous-bois",
+    "source": "recu/balade-nous-6.jpg",
+    "role": "galerie",
+    "alt": "Mobylette arrêtée sur un chemin en sous-bois",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "9ce280a6abad1b81",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 44%",
+    "sujet": {
+      "x": 27.9,
+      "y": 11.2,
+      "l": 52,
+      "h": 88.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.28,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.2,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.12,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.11,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 123,
+      "width": 900,
+      "height": 1200,
+      "source": [
+        900,
+        1600
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "900 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "mob-sous-bois-480.webp",
+      "mob-sous-bois-640.webp"
+    ],
+    "poids": {
+      "mob-sous-bois-480.webp": 73530,
+      "mob-sous-bois-640.webp": 122858
+    },
+    "media": "c.media({ nom: 'mob-sous-bois', alt: \"Mobylette arrêtée sur un chemin en sous-bois\", cadrage: '50% 44%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "chat-selle": {
+    "nom": "chat-selle",
+    "source": "recu/contactez-nous.jpg",
+    "role": "carte-service",
+    "alt": "Chat roux assis sur la selle d'une mobylette",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "8f175e4aae042b6d",
+    "ratio": "3:4",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "52% 42%",
+    "sujet": {
+      "x": 0,
+      "y": 18.5,
+      "l": 89.2,
+      "h": 81.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.03,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 208,
+      "width": 1341,
+      "height": 1788,
+      "source": [
+        1341,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "chat-selle-640.webp",
+      "chat-selle-960.webp",
+      "chat-selle-1280.webp"
+    ],
+    "poids": {
+      "chat-selle-640.webp": 110846,
+      "chat-selle-960.webp": 198098,
+      "chat-selle-1280.webp": 285356
+    },
+    "media": "c.media({ nom: 'chat-selle', alt: \"Chat roux assis sur la selle d'une mobylette\", cadrage: '52% 42%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 4' })"
+  },
+  "terrasse-vintage": {
+    "nom": "terrasse-vintage",
+    "source": "recu/balade-nous.jpg",
+    "role": "carte-service",
+    "alt": "Coin café à l'ancienne : guirlande de couleurs, vieille pompe rouge et tonneau en guise de table",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "1d935339e70622ed",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "43% 45%",
+    "sujet": {
+      "x": 17.6,
+      "y": 26.5,
+      "l": 50,
+      "h": 45.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.43,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.3,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.27,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1500,
+      "height": 2000,
+      "source": [
+        1500,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "terrasse-vintage-480.webp",
+      "terrasse-vintage-640.webp",
+      "terrasse-vintage-784.webp"
+    ],
+    "poids": {
+      "terrasse-vintage-480.webp": 35806,
+      "terrasse-vintage-640.webp": 52220,
+      "terrasse-vintage-784.webp": 69186
+    },
+    "media": "c.media({ nom: 'terrasse-vintage', alt: \"Coin café à l'ancienne : guirlande de couleurs, vieille pompe rouge et tonneau en guise de table\", cadrage: '43% 45%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 4' })"
+  },
+  "loueur": {
+    "nom": "loueur",
+    "source": "recu/image.jpg",
+    "role": "carte-service",
+    "alt": "Le loueur debout derrière ses mobylettes alignées",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "420ad844b780a4f1",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "45% 29%",
+    "sujet": {
+      "x": 35.4,
+      "y": 21.1,
+      "l": 19.4,
+      "h": 19.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.25,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.24,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1500,
+      "height": 2000,
+      "source": [
+        1500,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "loueur-480.webp",
+      "loueur-640.webp",
+      "loueur-784.webp"
+    ],
+    "poids": {
+      "loueur-480.webp": 110844,
+      "loueur-640.webp": 180890,
+      "loueur-784.webp": 246808
+    },
+    "media": "c.media({ nom: 'loueur', alt: \"Le loueur debout derrière ses mobylettes alignées\", cadrage: '45% 29%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 4' })"
+  },
+  "fallavier-chateau": {
+    "nom": "fallavier-chateau",
+    "source": "recu/balades-tarifs-3.jpg",
+    "role": "galerie",
+    "alt": "Le château de Fallavier vu du ciel, au-dessus de la campagne",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "b0fa913e0db03d10",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "51% 46%",
+    "sujet": {
+      "x": 38.1,
+      "y": 27.9,
+      "l": 26.5,
+      "h": 35.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.52,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.3,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.24,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.24,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 2,
+      "top": 0,
+      "width": 1998,
+      "height": 1124,
+      "source": [
+        2000,
+        1124
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "fallavier-chateau-640.webp",
+      "fallavier-chateau-1280.webp"
+    ],
+    "poids": {
+      "fallavier-chateau-640.webp": 51578,
+      "fallavier-chateau-1280.webp": 185308
+    },
+    "media": "c.media({ nom: 'fallavier-chateau', alt: \"Le château de Fallavier vu du ciel, au-dessus de la campagne\", cadrage: '51% 46%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '16 / 9' })"
+  },
+  "moidiere-daims": {
+    "nom": "moidiere-daims",
+    "source": "recu/balades-tarifs-11.jpg",
+    "role": "vignette",
+    "alt": "Daims dans le parc du château de Moidière",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "1a4d8cc78b0b425c",
+    "ratio": "3:2",
+    "largeurs": [
+      480
+    ],
+    "mobile": null,
+    "cadrage": "48% 36%",
+    "sujet": {
+      "x": 33.4,
+      "y": 14.9,
+      "l": 36.1,
+      "h": 28.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.39,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.25,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 507,
+      "height": 338,
+      "source": [
+        514,
+        338
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "514 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "moidiere-daims-480.webp"
+    ],
+    "poids": {
+      "moidiere-daims-480.webp": 41228
+    },
+    "media": "c.media({ nom: 'moidiere-daims', alt: \"Daims dans le parc du château de Moidière\", cadrage: '48% 36%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "panorama": {
+    "nom": "panorama",
+    "source": "recu/balades-tarifs-10.jpg",
+    "role": "vignette",
+    "alt": "Vue sur la campagne et les collines du Nord-Isère",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "fe7577df1d52d6fc",
+    "ratio": "16:9",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "51% 47%",
+    "sujet": {
+      "x": 41,
+      "y": 27.9,
+      "l": 20.7,
+      "h": 38.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.71,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.3,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.29,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.22,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 3,
+      "top": 0,
+      "width": 747,
+      "height": 420,
+      "source": [
+        750,
+        420
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "750 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "panorama-480.webp",
+      "panorama-640.webp"
+    ],
+    "poids": {
+      "panorama-480.webp": 33010,
+      "panorama-640.webp": 57662
+    },
+    "media": "c.media({ nom: 'panorama', alt: \"Vue sur la campagne et les collines du Nord-Isère\", cadrage: '51% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '16 / 9' })"
+  },
+  "cremieu-rue": {
+    "nom": "cremieu-rue",
+    "source": "recu/balades-tarifs-2.jpg",
+    "role": "carte-service",
+    "alt": "Ruelle pavée de Crémieu, les ruines du château sur la colline",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "a78cbc95dfcfe76c",
+    "ratio": "4:5",
+    "largeurs": [
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "54% 51%",
+    "sujet": {
+      "x": 36.5,
+      "y": 36.8,
+      "l": 33.4,
+      "h": 27.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.56,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.38,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.2,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 129,
+      "top": 0,
+      "width": 1600,
+      "height": 2000,
+      "source": [
+        1729,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "cremieu-rue-640.webp",
+      "cremieu-rue-960.webp"
+    ],
+    "poids": {
+      "cremieu-rue-640.webp": 71890,
+      "cremieu-rue-960.webp": 135314
+    },
+    "media": "c.media({ nom: 'cremieu-rue', alt: \"Ruelle pavée de Crémieu, les ruines du château sur la colline\", cadrage: '54% 51%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "cremieu-cloitre": {
+    "nom": "cremieu-cloitre",
+    "source": "recu/balades-tarifs-9.webp",
+    "role": "vignette",
+    "alt": "Cloître et jardin fleuri à Crémieu",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "1042c0aa2042d36e",
+    "ratio": "16:9",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 42%",
+    "sujet": {
+      "x": 0,
+      "y": 0.8,
+      "l": 100,
+      "h": 59.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.04,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 925,
+      "height": 520,
+      "source": [
+        925,
+        540
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "925 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "cremieu-cloitre-480.webp",
+      "cremieu-cloitre-640.webp"
+    ],
+    "poids": {
+      "cremieu-cloitre-480.webp": 30954,
+      "cremieu-cloitre-640.webp": 52672
+    },
+    "media": "c.media({ nom: 'cremieu-cloitre', alt: \"Cloître et jardin fleuri à Crémieu\", cadrage: '50% 42%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '16 / 9' })"
+  },
+  "brocanteurs-enseigne": {
+    "nom": "brocanteurs-enseigne",
+    "source": "recu/balades-tarifs-5.jpg",
+    "role": "galerie",
+    "alt": "L'entrée du village des brocanteurs et ses étals",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "acbee8c4b1c14155",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "49% 26%",
+    "sujet": {
+      "x": 8.9,
+      "y": 7.4,
+      "l": 83.3,
+      "h": 24.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.24,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.14,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.13,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        920
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "brocanteurs-enseigne-640.webp",
+      "brocanteurs-enseigne-1280.webp"
+    ],
+    "poids": {
+      "brocanteurs-enseigne-640.webp": 44800,
+      "brocanteurs-enseigne-1280.webp": 146596
+    },
+    "media": "c.media({ nom: 'brocanteurs-enseigne', alt: \"L'entrée du village des brocanteurs et ses étals\", cadrage: '49% 26%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '16 / 9' })"
+  },
+  "brocanteurs-hangar": {
+    "nom": "brocanteurs-hangar",
+    "source": "recu/balades-tarifs-8.jpg",
+    "role": "vignette",
+    "alt": "Hangar du village des brocanteurs, un avion posé sur le toit",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "a5b8ec3a62f74368",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "39% 40%",
+    "sujet": {
+      "x": 22.5,
+      "y": 15.2,
+      "l": 27.5,
+      "h": 60.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.25,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.24,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.15,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1000,
+      "height": 667,
+      "source": [
+        1000,
+        667
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1000 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "brocanteurs-hangar-480.webp",
+      "brocanteurs-hangar-640.webp"
+    ],
+    "poids": {
+      "brocanteurs-hangar-480.webp": 33172,
+      "brocanteurs-hangar-640.webp": 57806
+    },
+    "media": "c.media({ nom: 'brocanteurs-hangar', alt: \"Hangar du village des brocanteurs, un avion posé sur le toit\", cadrage: '39% 40%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "bascule-bar": {
+    "nom": "bascule-bar",
+    "source": "recu/balades-tarifs-4.jpg",
+    "role": "vignette",
+    "alt": "Le comptoir du café La Bascule",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "a39d2285a8f9884f",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "44% 45%",
+    "sujet": {
+      "x": 19.1,
+      "y": 30.9,
+      "l": 51.5,
+      "h": 27.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.51,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.29,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.25,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.17,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1500,
+      "source": [
+        2000,
+        1500
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "bascule-bar-480.webp",
+      "bascule-bar-640.webp",
+      "bascule-bar-800.webp"
+    ],
+    "poids": {
+      "bascule-bar-480.webp": 21104,
+      "bascule-bar-640.webp": 30602,
+      "bascule-bar-800.webp": 40772
+    },
+    "media": "c.media({ nom: 'bascule-bar', alt: \"Le comptoir du café La Bascule\", cadrage: '44% 45%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "duplex-terrasse": {
+    "nom": "duplex-terrasse",
+    "source": "recu/duplex.jpg",
+    "role": "vignette",
+    "alt": "La terrasse du Duplex 87, sous les parasols",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "d6e7805cff4a0b55",
+    "ratio": "16:9",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "53% 48%",
+    "sujet": {
+      "x": 34.9,
+      "y": 25,
+      "l": 31.8,
+      "h": 50
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.26,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.23,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.19,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.18,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 24,
+      "top": 0,
+      "width": 804,
+      "height": 452,
+      "source": [
+        828,
+        452
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "828 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "duplex-terrasse-480.webp",
+      "duplex-terrasse-640.webp"
+    ],
+    "poids": {
+      "duplex-terrasse-480.webp": 26986,
+      "duplex-terrasse-640.webp": 41110
+    },
+    "media": "c.media({ nom: 'duplex-terrasse', alt: \"La terrasse du Duplex 87, sous les parasols\", cadrage: '53% 48%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '16 / 9' })"
+  },
+  "grok/g-route-campagne": {
+    "nom": "grok/g-route-campagne",
+    "source": "recu/grok/g-route-campagne.jpg",
+    "role": "section-fond",
+    "alt": "Petite route de campagne entre les haies et les noyers, au soleil du soir",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "c25866251a415e45",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "47% 39%"
+    },
+    "cadrage": "47% 42%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        900
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/g-route-campagne-640.webp",
+      "grok/g-route-campagne-1280.webp",
+      "grok/g-route-campagne-1920.webp",
+      "grok/g-route-campagne-mobile-640.webp",
+      "grok/g-route-campagne-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/g-route-campagne-640.webp": 68220,
+      "grok/g-route-campagne-1280.webp": 258544,
+      "grok/g-route-campagne-1920.webp": 313822,
+      "grok/g-route-campagne-mobile-640.webp": 148088,
+      "grok/g-route-campagne-mobile-1080.webp": 283036
+    },
+    "media": "c.media({ nom: 'grok/g-route-campagne', alt: \"Petite route de campagne entre les haies et les noyers, au soleil du soir\", cadrage: '47% 42%', cadrageMobile: '47% 39%', sizes: '100vw' })"
+  },
+  "grok/g-route-libre": {
+    "nom": "grok/g-route-libre",
+    "source": "recu/grok/g-route-libre.jpg",
+    "role": "carte-service",
+    "alt": "Petite route de campagne qui file sous un grand noyer, le long d'un champ de maïs",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "41c5a035682d6637",
+    "ratio": "2:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "46% 42%",
+    "sujet": {
+      "x": 0,
+      "y": 3.1,
+      "l": 95.5,
+      "h": 71.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.18,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.02,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1400,
+      "height": 2100,
+      "source": [
+        1400,
+        2100
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/g-route-libre-640.webp",
+      "grok/g-route-libre-960.webp",
+      "grok/g-route-libre-1280.webp"
+    ],
+    "poids": {
+      "grok/g-route-libre-640.webp": 96122,
+      "grok/g-route-libre-960.webp": 148736,
+      "grok/g-route-libre-1280.webp": 205738
+    },
+    "media": "c.media({ nom: 'grok/g-route-libre', alt: \"Petite route de campagne qui file sous un grand noyer, le long d'un champ de maïs\", cadrage: '46% 42%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/g-appel-soir": {
+    "nom": "grok/g-appel-soir",
+    "source": "recu/grok/g-appel-soir.jpg",
+    "role": "section-fond",
+    "alt": "Coucher de soleil sur les collines boisées, derrière un muret de pierres",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "1ecc68596e707014",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "47% 37%"
+    },
+    "cadrage": "45% 45%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.06,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.02,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "haut",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        900
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/g-appel-soir-640.webp",
+      "grok/g-appel-soir-1280.webp",
+      "grok/g-appel-soir-1920.webp",
+      "grok/g-appel-soir-mobile-640.webp",
+      "grok/g-appel-soir-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/g-appel-soir-640.webp": 30386,
+      "grok/g-appel-soir-1280.webp": 65952,
+      "grok/g-appel-soir-1920.webp": 105748,
+      "grok/g-appel-soir-mobile-640.webp": 33042,
+      "grok/g-appel-soir-mobile-1080.webp": 61730
+    },
+    "media": "c.media({ nom: 'grok/g-appel-soir', alt: \"Coucher de soleil sur les collines boisées, derrière un muret de pierres\", cadrage: '45% 45%', cadrageMobile: '47% 37%', sizes: '100vw' })"
+  },
+  "grok/g-collines": {
+    "nom": "grok/g-collines",
+    "source": "recu/grok/g-collines.jpg",
+    "role": "ouverture",
+    "alt": "Collines boisées, prés et champs de maïs traversés par une petite route",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "4f2da2ff4bcd5736",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "49% 45%"
+    },
+    "cadrage": "51% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.28,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "haut",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        900
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/g-collines-640.webp",
+      "grok/g-collines-1280.webp",
+      "grok/g-collines-1920.webp",
+      "grok/g-collines-mobile-640.webp",
+      "grok/g-collines-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/g-collines-640.webp": 47880,
+      "grok/g-collines-1280.webp": 105864,
+      "grok/g-collines-1920.webp": 165404,
+      "grok/g-collines-mobile-640.webp": 39214,
+      "grok/g-collines-mobile-1080.webp": 74604
+    },
+    "media": "c.media({ nom: 'grok/g-collines', alt: \"Collines boisées, prés et champs de maïs traversés par une petite route\", cadrage: '51% 50%', cadrageMobile: '49% 45%', sizes: '100vw', priorite: true })"
+  },
+  "grok/g-terrasse": {
+    "nom": "grok/g-terrasse",
+    "source": "recu/grok/g-terrasse.jpg",
+    "role": "carte-service",
+    "alt": "Tasse de café et biscuits sur une table en bois, devant une maison de pierre aux volets verts",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 3,
+    "empreinte": "e5c9fef7618c466a",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 60%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 387,
+      "top": 0,
+      "width": 682,
+      "height": 853,
+      "source": [
+        1400,
+        853
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/g-terrasse-480.webp",
+      "grok/g-terrasse-640.webp"
+    ],
+    "poids": {
+      "grok/g-terrasse-480.webp": 33088,
+      "grok/g-terrasse-640.webp": 45870
+    },
+    "media": "c.media({ nom: 'grok/g-terrasse', alt: \"Tasse de café et biscuits sur une table en bois, devant une maison de pierre aux volets verts\", cadrage: '50% 60%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/g-casque-gants": {
+    "nom": "grok/g-casque-gants",
+    "source": "recu/grok/g-casque-gants.jpg",
+    "role": "carte-service",
+    "alt": "Casque rétro crème à lunettes et gants de cuir posés sur une pierre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "c7d496b99db2aa28",
+    "ratio": "1:1",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 53%",
+    "sujet": {
+      "x": 0,
+      "y": 6.3,
+      "l": 100,
+      "h": 90.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 7,
+      "top": 0,
+      "width": 1386,
+      "height": 1386,
+      "source": [
+        1400,
+        1386
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/g-casque-gants-480.webp",
+      "grok/g-casque-gants-640.webp",
+      "grok/g-casque-gants-960.webp"
+    ],
+    "poids": {
+      "grok/g-casque-gants-480.webp": 29288,
+      "grok/g-casque-gants-640.webp": 40960,
+      "grok/g-casque-gants-960.webp": 64922
+    },
+    "media": "c.media({ nom: 'grok/g-casque-gants', alt: \"Casque rétro crème à lunettes et gants de cuir posés sur une pierre\", cadrage: '50% 53%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '1 / 1' })"
+  },
+  "grok/g-404": {
+    "nom": "grok/g-404",
+    "source": "recu/grok/g-404.jpg",
+    "role": "404",
+    "alt": "Petite route de campagne qui longe un vieux cabanon de pierre couvert de lierre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "ce0f6b96de501f6c",
+    "ratio": "16:9",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "54% 31%"
+    },
+    "cadrage": "45% 43%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        900
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/g-404-800.webp",
+      "grok/g-404-1600.webp",
+      "grok/g-404-mobile-640.webp",
+      "grok/g-404-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/g-404-800.webp": 66098,
+      "grok/g-404-1600.webp": 143750,
+      "grok/g-404-mobile-640.webp": 63130,
+      "grok/g-404-mobile-1080.webp": 115612
+    },
+    "media": "c.media({ nom: 'grok/g-404', alt: \"Petite route de campagne qui longe un vieux cabanon de pierre couvert de lierre\", cadrage: '45% 43%', cadrageMobile: '54% 31%', sizes: '100vw', ratio: '16 / 9' })"
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "commun": {
+    "navigation": "Navigation principale",
+    "menu": "Menu",
+    "fermer": "Fermer",
+    "actionEntete": "Réserver",
+    "appeler": "Appeler",
+    "sommaire": "Sommaire",
+    "retourHaut": "Retour en haut",
+    "maquette": "Maquette : les informations marquées « à compléter » seront fournies par le client.",
+    "evitement": "Aller au contenu",
+    "mentionIa": "Illustration générée",
+    "pause": "Pause",
+    "lecture": "Lecture",
+    "introLigne": "Location de mobylettes en Isère",
+    "mentions": "Mentions légales",
+    "confidentialite": "Politique de confidentialité",
+    "aCompleter": "à compléter",
+    "contact": "Contact",
+    "suivre": "Nous suivre",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "nouvelOnglet": "nouvel onglet",
+    "piedAccroche": "Location de mobylettes restaurées à Chèzeneuve et ses alentours, en Isère.",
+    "depart": "Départ et retour à Chèzeneuve",
+    "prixConfirmer": "Prix par mobylette, à confirmer à la réservation.",
+    "traceIndicatif": "Tracés indicatifs, redessinés d'après les parcours du site.",
+    "provisoire": "Image à venir",
+    "km": "km",
+    "kmMax": "km maximum",
+    "des": "dès",
+    "parMob": "par mobylette",
+    "reserverCette": "Réserver cette balade",
+    "voirBalade": "Voir la balade",
+    "inclus": "Casques et gants fournis",
+    "appelSur": "On y va ?",
+    "appelTitre": "Alors, <em>on roule ?</em>",
+    "appelTexte": "Informations et réservation par téléphone ou par e-mail.",
+    "appelAction": "Réserver une balade",
+    "carteRegion": "Carte des parcours",
+    "departEtiquette": "Départ",
+    "confidentialiteNote": "Politique de confidentialité : à compléter."
+  },
+  "pages": {
+    "accueil": {
+      "titre": "JP Loc Mob : balades en mobylette en Isère",
+      "description": "Location de mobylettes restaurées à Chèzeneuve : trois balades en Isère, casques et gants fournis, dès 50 € la demi-journée.",
+      "nav": "Accueil",
+      "partageAlt": "JP Loc Mob, une mobylette restaurée devant une palissade en bois",
+      "accroche": "La route est à vous."
+    },
+    "balades-et-tarifs": {
+      "titre": "Balades et tarifs : JP Loc Mob",
+      "description": "Fallavier, village des brocanteurs et Crémieu, ou itinéraire libre : les trois balades en mobylette, leurs parcours et leurs tarifs.",
+      "nav": "Balades et tarifs",
+      "partageAlt": "Les balades en mobylette de JP Loc Mob",
+      "accroche": "Trois balades, trois routes."
+    },
+    "les-mobylettes": {
+      "titre": "Les mobylettes : JP Loc Mob",
+      "description": "Cinq mobylettes restaurées à louer en Isère, l'accueil autour d'un café et les conditions de location.",
+      "nav": "Les mobylettes",
+      "partageAlt": "Les mobylettes restaurées de JP Loc Mob, garées en rang",
+      "accroche": "Cinq mobylettes restaurées."
+    },
+    "reserver": {
+      "titre": "Réserver une balade : JP Loc Mob",
+      "description": "Choisissez votre balade, votre formule et le nombre de mobylettes : la demande de réservation se prépare en quelques étapes.",
+      "nav": "Réserver",
+      "partageAlt": "Réserver une balade en mobylette avec JP Loc Mob",
+      "accroche": "Votre balade en quelques étapes."
+    },
+    "contact": {
+      "titre": "Contact : JP Loc Mob",
+      "description": "Informations et réservation par téléphone au 06 82 38 21 43 ou par e-mail. Location de mobylettes à Chèzeneuve et ses alentours.",
+      "nav": "Contact",
+      "partageAlt": "Contacter JP Loc Mob, un chat roux assis sur une mobylette",
+      "accroche": "Un appel, et on en parle."
+    },
+    "404": {
+      "titre": "Sortie de route : JP Loc Mob",
+      "description": "Cette page n'existe pas ou plus.",
+      "nav": "Page introuvable",
+      "partageAlt": "Page introuvable",
+      "accroche": "Sortie de route"
+    }
+  },
+  "accueil": {
+    "hero": {
+      "sur": "Location de mobylettes · Chèzeneuve, Isère",
+      "titre1": "La route",
+      "titre2": "est à <em>vous.</em>",
+      "texte": "Cinq mobylettes restaurées, trois balades en Isère, casques et gants fournis.",
+      "action": "Réserver une balade",
+      "action2": "Voir les balades",
+      "info": "Dès 50 € la demi-journée",
+      "texte2": "En solo, en couple ou entre amis."
+    },
+    "manifeste": {
+      "sur": "L'esprit",
+      "texte": "Nos mobylettes sont les témoins d'une époque : celle de la liberté et de l'authenticité. On vous accueille autour d'un café, on vous explique tout, et vous partez redécouvrir l'Isère à votre rythme.",
+      "signature": "Une aventure nostalgique en Isère."
+    },
+    "balades": {
+      "sur": "Les balades",
+      "titre": "Trois balades, <em>trois routes</em>",
+      "texte": "Deux parcours tracés pour vous, et un troisième que vous dessinez vous-même.",
+      "tout": "Tous les parcours et les tarifs"
+    },
+    "carte": {
+      "sur": "Sur la carte",
+      "titre": "Deux boucles au départ de <em>Chèzeneuve</em>",
+      "texte": "On part de Chèzeneuve et on y revient. Entre les deux, des petites routes, un château, des daims, des remparts.",
+      "etapes": "Sur le parcours"
+    },
+    "mobs": {
+      "sur": "Les mobylettes",
+      "titre": "Cinq mobylettes <em>restaurées</em>",
+      "texte": "Bleues ou rouges, toutes d'époque. Elles sont louées selon la demande et le planning.",
+      "lien": "Découvrir les mobylettes",
+      "region": "Photos des mobylettes"
+    },
+    "deroule": {
+      "sur": "Le déroulé",
+      "titre": "Comment ça <em>se passe</em>",
+      "e1Titre": "Un café en terrasse",
+      "e1Texte": "On se retrouve sur la terrasse, autour d'un café, et on vous explique le fonctionnement.",
+      "e2Titre": "Casque et gants",
+      "e2Texte": "Ils sont fournis avec chaque mobylette.",
+      "e3Titre": "La route",
+      "e3Texte": "Un parcours proposé ou votre propre itinéraire, jusqu'à 70 km.",
+      "e4Titre": "Le retour",
+      "e4Texte": "Vous ramenez la mobylette à l'heure de fin de votre formule."
+    },
+    "tarifs": {
+      "sur": "Tarifs en direct",
+      "titre": "Votre sortie, <em>votre prix</em>",
+      "texte": "Choisissez la balade, la durée et le nombre de mobylettes : le total se met à jour."
+    },
+    "pauses": {
+      "titre": "Deux pauses en terrasse sur la route",
+      "lien": "Voir les adresses"
+    },
+    "faq": {
+      "sur": "Questions pratiques",
+      "titre": "Avant de <em>partir</em>"
+    }
+  },
+  "balades": {
+    "hero": {
+      "sur": "Balades et tarifs",
+      "titre": "Trois balades, <em>trois routes</em>",
+      "texte": "Deux boucles tracées au départ de Chèzeneuve, et un itinéraire libre. Casques et gants sont fournis.",
+      "action": "Réserver une balade",
+      "info": "De 50 à 70 € par mobylette",
+      "sommaire": "Aller à une balade"
+    },
+    "parcours": "Le parcours",
+    "formules": "Les formules",
+    "libreTitre": "Votre trajet",
+    "libreTexte": "Pas de tracé imposé : vous choisissez votre route, dans la limite de 70 km.",
+    "photos": "En chemin",
+    "composeur": {
+      "sur": "Composer sa sortie",
+      "titre": "Calculez <em>votre sortie</em>",
+      "texte": "Le total suit vos choix. La caution est de 600 € par mobylette."
+    },
+    "pauses": {
+      "sur": "En route",
+      "titre": "Deux pauses <em>en terrasse</em>",
+      "texte": "Nos adresses pour s'arrêter en chemin."
+    }
+  },
+  "mobylettes": {
+    "hero": {
+      "sur": "Les mobylettes",
+      "titre": "Cinq mobylettes <em>restaurées</em>",
+      "texte": "Des mobylettes d'époque, remises en état par des passionnés, à louer pour une demi-journée ou une journée.",
+      "action": "Réserver une balade",
+      "info": "5 mobylettes, selon la demande et le planning",
+      "chiffre": "5"
+    },
+    "galerie": {
+      "sur": "En images",
+      "titre": "Les voici, <em>prêtes à partir</em>",
+      "region": "Photos des mobylettes",
+      "noteTitre": "Louées selon la demande et le planning",
+      "noteTexte": "Cinq mobylettes sont disponibles. Dites-nous combien vous serez.",
+      "noteLien": "Réserver"
+    },
+    "cafe": {
+      "sur": "L'accueil",
+      "titre": "Le café <em>avant la route</em>",
+      "texte": "Tout commence sur la terrasse, dans un décor d'époque. Autour d'un café, on vous explique le fonctionnement de la mobylette avant le départ.",
+      "texte2": "En solo, pour une escapade en couple ou pour une journée entre amis : on prend le temps de bien vous installer."
+    },
+    "conditions": {
+      "sur": "Les conditions",
+      "titre": "À savoir <em>avant de louer</em>",
+      "c1Chiffre": "18",
+      "c1Unite": "ans",
+      "c1Texte": "La location est réservée aux personnes de plus de 18 ans.",
+      "c2Chiffre": "600",
+      "c2Unite": "€",
+      "c2Texte": "Caution demandée pour chaque mobylette.",
+      "c3Titre": "Assurées",
+      "c3Texte": "Les mobylettes sont couvertes par des assurances. On vous demande d'en prendre soin et de conduire de façon responsable.",
+      "c4Titre": "Équipées",
+      "c4Texte": "Casques et gants sont fournis avec chaque mobylette."
+    }
+  },
+  "reserver": {
+    "hero": {
+      "sur": "Réserver",
+      "titre": "Votre balade, <em>en quatre étapes</em>",
+      "texte": "Préparez votre demande ici, ou appelez directement.",
+      "info": "Maquette : la demande est simulée, rien n'est envoyé"
+    },
+    "ticket": {
+      "titre": "Bon de sortie",
+      "balade": "Balade",
+      "formule": "Formule",
+      "mobs": "Mobylettes",
+      "total": "Total estimé",
+      "caution": "Caution",
+      "vide": "à choisir",
+      "note": "Prix par mobylette, à confirmer à la réservation."
+    },
+    "form": {
+      "progression": "Progression",
+      "e1": "Balade",
+      "e1Titre": "Quelle balade vous tente ?",
+      "e1Libelle": "Balade",
+      "e2": "Formule",
+      "e2Titre": "Pour combien de temps ?",
+      "e2Libelle": "Formule",
+      "e2Note": "La demi-journée est proposée avec l'itinéraire libre.",
+      "e3": "Groupe",
+      "e3Titre": "Combien de mobylettes, et quand ?",
+      "mobsLibelle": "Nombre de mobylettes",
+      "mobsAide": "de 1 à 5",
+      "moins": "Une mobylette de moins",
+      "plus": "Une mobylette de plus",
+      "date": "Date souhaitée",
+      "message": "Un mot pour nous (facultatif)",
+      "e4": "Contact",
+      "e4Titre": "Comment vous joindre ?",
+      "prenom": "Prénom",
+      "nom": "Nom",
+      "email": "E-mail",
+      "tel": "Téléphone",
+      "majeur": "Je confirme que chaque conducteur a plus de 18 ans.",
+      "majeurLibelle": "Plus de 18 ans",
+      "accord": "J'accepte que ces informations servent uniquement à répondre à ma demande.",
+      "accordLibelle": "Accord",
+      "donnees": "Vos informations ne servent qu'à répondre à cette demande.",
+      "obligatoires": "Les champs marqués d'un astérisque sont obligatoires.",
+      "e5": "Résumé",
+      "e5Titre": "Tout est juste ?",
+      "recapVide": "Le récapitulatif de vos réponses s'affiche ici.",
+      "retour": "Retour",
+      "continuer": "Continuer",
+      "revenir": "Revenir au récapitulatif",
+      "envoyer": "Envoyer la demande",
+      "finTitre": "Merci, votre demande est prête.",
+      "finTexte": "Maquette : rien n'a été envoyé. Sur le site en ligne, la demande partirait chez JP Loc Mob, qui vous répondrait par téléphone ou par e-mail.",
+      "finMail": "Envoyer par e-mail",
+      "finNouveau": "Nouvelle demande",
+      "sujetMail": "Demande de réservation"
+    },
+    "compris": {
+      "sur": "Compris dans le prix",
+      "titre": "Ce qui vous <em>attend</em>",
+      "i1": "Une mobylette restaurée",
+      "i2": "Casque et gants",
+      "i3": "Un café et les explications avant le départ",
+      "i4": "Des mobylettes assurées",
+      "appelTitre": "Plus simple : un appel",
+      "appelTexte": "Informations et réservation par téléphone ou par e-mail."
+    }
+  },
+  "contact": {
+    "hero": {
+      "sur": "Contact",
+      "titre": "Un appel, <em>et on en parle</em>",
+      "texte": "Informations et réservation par téléphone ou par e-mail.",
+      "action": "Appeler le 06 82 38 21 43",
+      "info": "jplocmob@gmail.com"
+    },
+    "ecrire": {
+      "sur": "Écrire",
+      "titre": "Une question ? <em>Écrivez-nous</em>",
+      "nom": "Votre nom",
+      "email": "Votre e-mail",
+      "message": "Votre message",
+      "envoyer": "Envoyer le message",
+      "simule": "Maquette : rien n'a été envoyé. Sur le site en ligne, votre message partirait chez JP Loc Mob.",
+      "donnees": "Vos informations ne servent qu'à répondre à votre message.",
+      "erreurNom": "Indiquez votre nom.",
+      "erreurEmail": "Indiquez une adresse e-mail valide.",
+      "erreurMessage": "Écrivez votre message."
+    },
+    "zone": {
+      "sur": "Où nous trouver",
+      "titre": "Chèzeneuve <em>et ses alentours</em>",
+      "texte": "Location de deux-roues motorisés sur Chèzeneuve et ses alentours, en Isère. Les balades partent de Chèzeneuve et y reviennent.",
+      "reseaux": "Les nouvelles et les photos des balades sont sur Facebook et Instagram."
+    }
+  },
+  "introuvable": {
+    "sur": "Erreur 404",
+    "titre": "Sortie <em>de route</em>",
+    "texte": "Cette page n'existe pas ou plus. La route, elle, continue par ici.",
+    "retour": "Revenir à l'accueil",
+    "balades": "Voir les balades"
+  },
+  "composeur": {
+    "balade": "La balade",
+    "duree": "La durée",
+    "combien": "Combien de mobylettes",
+    "mobylettes": "Mobylettes",
+    "mobylettesAide": "de 1 à 5",
+    "total": "Total estimé",
+    "detail": "Voir le détail",
+    "votre": "Votre sortie",
+    "caution": "Caution (600 € par mobylette) :",
+    "demander": "Demander cette sortie",
+    "detailCalcul": "Détail du calcul",
+    "noteDemi": "La demi-journée est proposée avec l'itinéraire libre."
+  }
+}

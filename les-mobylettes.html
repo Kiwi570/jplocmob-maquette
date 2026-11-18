@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Les mobylettes : JP Loc Mob</title>
+<meta name="description" content="Cinq mobylettes restaurées à louer en Isère, l&#39;accueil autour d&#39;un café et les conditions de location.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://jplocmob-maquette.vercel.app/les-mobylettes">
+<style>:root{--fond:#F3EDDC;--texte:#1F3B30;--voile-fond:#1F3B30;--ouverture-fond:#F3EDDC;--menu-fond:#1F3B30}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/bricolage-grotesque-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/polices/instrument-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/modules.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F3EDDC">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JP Loc Mob">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Les mobylettes : JP Loc Mob">
+<meta property="og:description" content="Cinq mobylettes restaurées à louer en Isère, l&#39;accueil autour d&#39;un café et les conditions de location.">
+<meta property="og:url" content="https://jplocmob-maquette.vercel.app/les-mobylettes">
+<meta property="og:image" content="https://jplocmob-maquette.vercel.app/assets/partage/les-mobylettes-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Les mobylettes restaurées de JP Loc Mob, garées en rang">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"JP Loc Mob","url":"https://jplocmob-maquette.vercel.app/","telephone":"+33682382143","email":"jplocmob@gmail.com","description":"Location de mobylettes restaurées et balades en Isère, à Chèzeneuve et ses alentours.","address":{"@type":"PostalAddress","addressLocality":"Chèzeneuve","addressRegion":"Isère","addressCountry":"FR"},"priceRange":"50 € à 70 €","sameAs":["https://www.facebook.com/profile.php?id=61550602001718","https://www.instagram.com/jp_loc_mob/"]}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-240.png" alt="" width="88" height="88"><span data-voile-libelle>Les mobylettes</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <svg class="ouverture-route" viewBox="0 0 1440 240" preserveAspectRatio="none"><path class="ouverture-route-bord" pathLength="1" d="M-20 150 C 220 40 420 230 720 120 S 1200 30 1460 130"/><path class="ouverture-route-ligne" pathLength="1" d="M-20 150 C 220 40 420 230 720 120 S 1200 30 1460 130"/></svg>
+  <span class="ouverture-encre"></span>
+  <img class="ouverture-logo" src="/assets/images/logo-240.png" alt="" width="132" height="132" data-ouverture-objet>
+  <p class="ouverture-ligne">Location de mobylettes en Isère</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo-240.png" alt="" width="46" height="46"><span>JP Loc Mob</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/balades-et-tarifs" data-libelle="Balades et tarifs">Balades et tarifs</a></li><li><a href="/les-mobylettes" data-libelle="Les mobylettes" aria-current="page">Les mobylettes</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/balades-et-tarifs" class="menu-lien" data-libelle="Balades et tarifs">Balades et tarifs</a></li><li style="--i:2"><a href="/les-mobylettes" class="menu-lien" data-libelle="Les mobylettes" aria-current="page">Les mobylettes</a></li><li style="--i:3"><a href="/reserver" class="menu-lien" data-libelle="Réserver">Réserver</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33682382143">Appeler 06 82 38 21 43</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="tete tete--mosaique" id="debut">
+  <div class="conteneur tete-grille">
+    <div class="tete-texte">
+      <p class="surtitre" data-entree>Les mobylettes</p>
+      <h1 class="tete-titre " data-anime="gsap"><span class="ligne-masque"><span class="tete-ligne">Cinq mobylettes <em>restaurées</em></span></span></h1>
+      <p class="tete-intro masque-ecran-tres-bas" data-entree>Des mobylettes d&#39;époque, remises en état par des passionnés, à louer pour une demi-journée ou une journée.</p>
+      <p class="tete-actions" data-entree>
+        <a href="/reserver" class="bouton" data-libelle="Réserver" data-action-principale data-survol="magnetique">Réserver une balade</a>
+      </p>
+      <p class="hero-info" data-info-cle data-entree><span class="pastille" aria-hidden="true"></span>5 mobylettes, selon la demande et le planning</p>
+    </div>
+    <div class="mosaique">
+      <span class="mosaique-chiffre chiffres" aria-hidden="true" data-audit-ignorer>5</span>
+      <figure class="media mosaique-a" data-fx="parallaxe" data-fx-force="6" data-iris-centre style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/mob-rangee-1280.webp" srcset="/assets/images/mob-rangee-640.webp 640w, /assets/images/mob-rangee-960.webp 960w, /assets/images/mob-rangee-1280.webp 1280w" sizes="(max-width: 760px) 58vw, 30vw" alt="Quatre mobylettes bleues et rouge garées en rang, vues de haut" width="1280" height="1707" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+      <figure class="media mosaique-b" data-entree-rideau style="--cadrage:50% 60%">
+  <picture>
+    <img src="/assets/images/mob-rouge-960.webp" srcset="/assets/images/mob-rouge-480.webp 480w, /assets/images/mob-rouge-640.webp 640w, /assets/images/mob-rouge-960.webp 960w" sizes="(max-width: 760px) 40vw, 20vw" alt="Rangée de mobylettes dans l&#39;herbe, une Motobécane rouge au premier plan" width="960" height="1280" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+      <img class="mosaique-tampon" src="/assets/images/logo-240.png" alt="" width="120" height="120" data-effet="tampon" data-tampon-tourne>
+    </div>
+  </div>
+</section>
+<section class="section section--papier2 parc" id="galerie">
+  <div class="conteneur">
+    <div class="section-tete"><p class="surtitre" data-anime>En images</p><h2 class="titre " data-anime="lignes">Les voici, <em>prêtes à partir</em></h2></div>
+    <div class="parc-grille"><figure class="parc-carte parc-carte--0" data-anime>
+      <figure class="media parc-media" data-fx="parallaxe" data-fx-force="7" style="--cadrage:50% 65%">
+  <picture>
+    <img src="/assets/images/mob-bleue-herbe-1280.webp" srcset="/assets/images/mob-bleue-herbe-640.webp 640w, /assets/images/mob-bleue-herbe-960.webp 960w, /assets/images/mob-bleue-herbe-1280.webp 1280w" sizes="(max-width: 760px) 46vw, 30vw" alt="Mobylette bleue à sacoche dans un pré, sous un ciel bleu" width="1280" height="1707" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figcaption>Une bleue et sa sacoche, au pré</figcaption>
+    </figure><figure class="parc-carte parc-carte--1" data-anime>
+      <figure class="media parc-media" data-fx="parallaxe" data-fx-force="7" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/mob-club-960.webp" srcset="/assets/images/mob-club-480.webp 480w, /assets/images/mob-club-640.webp 640w, /assets/images/mob-club-960.webp 960w" sizes="(max-width: 760px) 46vw, 30vw" alt="Gros plan sur une mobylette bleu marine" width="960" height="1280" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figcaption>Bleu marine, de près</figcaption>
+    </figure><figure class="parc-carte parc-carte--2" data-anime>
+      <figure class="media parc-media" data-fx="parallaxe" data-fx-force="7" style="--cadrage:50% 40%">
+  <picture>
+    <img src="/assets/images/chat-selle-1280.webp" srcset="/assets/images/chat-selle-640.webp 640w, /assets/images/chat-selle-960.webp 960w, /assets/images/chat-selle-1280.webp 1280w" sizes="(max-width: 760px) 46vw, 30vw" alt="Chat roux assis sur la selle d&#39;une mobylette" width="1280" height="1707" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figcaption>Le gardien des lieux</figcaption>
+    </figure><figure class="parc-carte parc-carte--large" data-anime>
+      <figure class="media parc-media" data-fx="parallaxe" data-fx-force="7" style="--cadrage:50% 45%">
+  <picture>
+    <img src="/assets/images/accueil-ouverture-1280.webp" srcset="/assets/images/accueil-ouverture-640.webp 640w, /assets/images/accueil-ouverture-1280.webp 1280w, /assets/images/accueil-ouverture-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 62vw" alt="Mobylette gris-bleu à sacoches de cuir, posée dans l&#39;herbe devant une palissade en bois" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figcaption>Sacoches de cuir, devant la palissade</figcaption>
+    </figure>
+      <div class="parc-note" data-anime>
+        <h3>Louées selon la demande et le planning</h3>
+        <p>Cinq mobylettes sont disponibles. Dites-nous combien vous serez.</p>
+        <p><a href="/reserver" class="lien-fleche" data-libelle="Réserver">Réserver</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section cafe" id="accueil-cafe">
+  <div class="conteneur cafe-grille">
+    <div class="cafe-visuels">
+      <figure class="media cafe-a" data-anime="rideau" style="--cadrage:50% 45%">
+  <picture>
+    <img src="/assets/images/terrasse-vintage-784.webp" srcset="/assets/images/terrasse-vintage-480.webp 480w, /assets/images/terrasse-vintage-640.webp 640w, /assets/images/terrasse-vintage-784.webp 784w" sizes="(max-width: 760px) 60vw, 28vw" alt="Coin café à l&#39;ancienne : guirlande de couleurs, vieille pompe rouge et tonneau en guise de table" width="784" height="1045" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media cafe-b" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/g-terrasse-640.webp" srcset="/assets/images/grok/g-terrasse-480.webp 480w, /assets/images/grok/g-terrasse-640.webp 640w" sizes="(max-width: 760px) 40vw, 18vw" alt="Tasse de café et biscuits sur une table en bois, devant une maison de pierre aux volets verts" width="640" height="800" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    </div>
+    <div class="cafe-texte">
+      <p class="surtitre" data-anime>L&#39;accueil</p>
+      <h2 class="titre " data-anime="lignes">Le café <em>avant la route</em></h2>
+      <p data-anime>Tout commence sur la terrasse, dans un décor d&#39;époque. Autour d&#39;un café, on vous explique le fonctionnement de la mobylette avant le départ.</p>
+      <p data-anime>En solo, pour une escapade en couple ou pour une journée entre amis : on prend le temps de bien vous installer.</p>
+      <figure class="media cafe-c" data-anime="rideau" style="--cadrage:50% 30%">
+  <picture>
+    <img src="/assets/images/loueur-784.webp" srcset="/assets/images/loueur-480.webp 480w, /assets/images/loueur-640.webp 640w, /assets/images/loueur-784.webp 784w" sizes="(max-width: 760px) 60vw, 22vw" alt="Le loueur debout derrière ses mobylettes alignées" width="784" height="1045" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+  </div>
+</section>
+<svg class="route route--papier route--jonction" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" data-effet="route" data-grille="fil" data-visuel>
+  <mask id="route-10" maskUnits="userSpaceOnUse" x="-40" y="-40" width="1520" height="200"><path class="route-masque" d="M-20 60 C 160 120 360 14 620 70 S 1010 110 1220 50 S 1400 30 1460 60" pathLength="1" fill="none" stroke="#fff" stroke-width="40"/></mask>
+  <g mask="url(#route-10)"><path class="route-bord" d="M-20 60 C 160 120 360 14 620 70 S 1010 110 1220 50 S 1400 30 1460 60" fill="none"/><path class="route-ligne" d="M-20 60 C 160 120 360 14 620 70 S 1010 110 1220 50 S 1400 30 1460 60" fill="none"/></g>
+</svg>
+<section class="section sombre conditions" id="conditions">
+  <div class="conteneur">
+    <div class="section-tete"><p class="surtitre" data-anime>Les conditions</p><h2 class="titre " data-anime="lignes">À savoir <em>avant de louer</em></h2></div>
+    <div class="conditions-grille" data-anime="cascade">
+      <article class="condition"><p class="condition-chiffre chiffres"><span data-compteur="18">18</span> <small>ans</small></p><p>La location est réservée aux personnes de plus de 18 ans.</p></article>
+      <article class="condition"><p class="condition-chiffre chiffres" data-prix><span data-compteur="600">600</span> <small>€</small></p><p>Caution demandée pour chaque mobylette.</p></article>
+      <article class="condition"><h3>Assurées</h3><p>Les mobylettes sont couvertes par des assurances. On vous demande d&#39;en prendre soin et de conduire de façon responsable.</p></article>
+      <article class="condition condition--image"><figure class="media condition-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/g-casque-gants-960.webp" srcset="/assets/images/grok/g-casque-gants-480.webp 480w, /assets/images/grok/g-casque-gants-640.webp 640w, /assets/images/grok/g-casque-gants-960.webp 960w" sizes="(max-width: 760px) 100vw, 22vw" alt="Casque rétro crème à lunettes et gants de cuir posés sur une pierre" width="960" height="960" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure><h3>Équipées</h3><p>Casques et gants sont fournis avec chaque mobylette.</p></article>
+    </div>
+  </div>
+</section>
+<section class="appel " id="appel">
+  <svg class="route route--sapin appel-route" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" data-effet="route" data-grille="fil" data-visuel>
+  <mask id="route-11" maskUnits="userSpaceOnUse" x="-40" y="-40" width="1520" height="200"><path class="route-masque" d="M-20 60 C 160 120 360 14 620 70 S 1010 110 1220 50 S 1400 30 1460 60" pathLength="1" fill="none" stroke="#fff" stroke-width="40"/></mask>
+  <g mask="url(#route-11)"><path class="route-bord" d="M-20 60 C 160 120 360 14 620 70 S 1010 110 1220 50 S 1400 30 1460 60" fill="none"/><path class="route-ligne" d="M-20 60 C 160 120 360 14 620 70 S 1010 110 1220 50 S 1400 30 1460 60" fill="none"/></g>
+</svg>
+  <div class="conteneur appel-contenu">
+    <img class="appel-tampon" src="/assets/images/logo-240.png" alt="" width="132" height="132" loading="lazy" data-effet="tampon" data-tampon>
+    <p class="surtitre" data-anime>On y va ?</p>
+    <h2 class="titre " data-anime="lignes">Alors, <em>on roule ?</em></h2>
+    <p data-anime>Informations et réservation par téléphone ou par e-mail.</p>
+    <p class="appel-actions" data-anime>
+      <a href="/reserver" class="bouton" data-libelle="Réserver" data-survol="magnetique">Réserver une balade</a>
+      <a class="bouton bouton--contour" href="tel:+33682382143" data-survol="magnetique">06 82 38 21 43</a>
+    </p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-240.png" alt="" width="72" height="72" loading="lazy">
+      <p><strong>JP Loc Mob</strong></p>
+      <p>Location de mobylettes restaurées à Chèzeneuve et ses alentours, en Isère.</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/balades-et-tarifs" data-libelle="Balades et tarifs">Balades et tarifs</a></li><li><a href="/les-mobylettes" data-libelle="Les mobylettes" aria-current="page">Les mobylettes</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p><strong>Contact</strong></p>
+      <ul>
+        <li><a href="tel:+33682382143">06 82 38 21 43</a></li>
+        <li><a href="mailto:jplocmob@gmail.com">jplocmob@gmail.com</a></li>
+        <li><span class="pied-texte">Départ et retour à Chèzeneuve</span></li>
+      </ul>
+    </div>
+    <div>
+      <p><strong>Nous suivre</strong></p>
+      <ul>
+        <li><a href="https://www.facebook.com/profile.php?id=61550602001718" target="_blank" rel="noopener">Facebook<span class="visuellement-cache"> (nouvel onglet)</span></a></li>
+        <li><a href="https://www.instagram.com/jp_loc_mob/" target="_blank" rel="noopener">Instagram<span class="visuellement-cache"> (nouvel onglet)</span></a></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Mentions légales · à compléter<span aria-hidden="true"> &nbsp;|&nbsp; </span><br class="pied-saut">Politique de confidentialité · à compléter</p>
+    <p>Maquette : les informations marquées « à compléter » seront fournies par le client.</p>
+    <p>© JP Loc Mob</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33682382143">Appeler</a>
+  <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+</div>
+</body>
+</html>

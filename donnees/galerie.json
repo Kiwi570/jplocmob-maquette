@@ -1,0 +1,38 @@
+[
+ {
+  "image": "mob-rouge",
+  "titre": "La Motobécane rouge, en tête de file",
+  "cadrage": "50% 55%"
+ },
+ {
+  "image": "mob-rangee",
+  "titre": "Les bleues et la rouge, prêtes à partir",
+  "cadrage": "50% 50%"
+ },
+ {
+  "image": "mob-bleue-herbe",
+  "titre": "Une bleue et sa sacoche, au pré",
+  "cadrage": "50% 65%"
+ },
+ {
+  "image": "mob-club",
+  "titre": "Bleu marine, de près",
+  "cadrage": "50% 50%"
+ },
+ {
+  "image": "chat-selle",
+  "titre": "Le gardien des lieux",
+  "cadrage": "50% 40%"
+ },
+ {
+  "image": "mob-sous-bois",
+  "titre": "Une halte en sous-bois",
+  "cadrage": "50% 50%"
+ },
+ {
+  "image": "accueil-ouverture",
+  "titre": "Sacoches de cuir, devant la palissade",
+  "cadrage": "50% 45%",
+  "large": true
+ }
+]

@@ -1,0 +1,20 @@
+{
+  "nom": "JP Loc Mob",
+  "adresse": "https://jplocmob-maquette.vercel.app",
+  "siteActuel": "jplocmob.wordpress.com",
+  "version": 1,
+  "langues": ["fr"],
+  "navigation": ["accueil", "balades-et-tarifs", "les-mobylettes", "reserver", "contact"],
+  "actionEntete": { "page": "reserver" },
+  "couleurs": { "fond": "#F3EDDC", "texte": "#1F3B30", "voile": "#1F3B30", "ouverture": "#F3EDDC", "menu": "#1F3B30", "theme": "#F3EDDC" },
+  "formeVoile": "iris",
+  "contact": {
+    "telephone": "06 82 38 21 43", "telephoneLien": "+33682382143", "email": "jplocmob@gmail.com",
+    "adresse": "Chèzeneuve, Isère",
+    "facebook": "https://www.facebook.com/profile.php?id=61550602001718",
+    "instagram": "https://www.instagram.com/jp_loc_mob/"
+  },
+  "polices": ["/assets/polices/bricolage-grotesque-800.woff2", "/assets/polices/instrument-sans-400.woff2"],
+  "imagePartage": "accueil-ouverture-1280.webp",
+  "curseur": false
+}

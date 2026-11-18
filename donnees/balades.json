@@ -1,0 +1,94 @@
+[
+ {
+  "id": "fallavier",
+  "nom": "Balade Fallavier",
+  "court": "Fallavier",
+  "km": 37,
+  "max": false,
+  "accroche": "Un château, un étang, des daims",
+  "texte": "Le château de Fallavier, son parc au bord de l'étang, puis le parc animalier du château de Moidière.",
+  "etapes": [
+   "Chèzeneuve",
+   "Crachier",
+   "Vignieu",
+   "Parc animalier du château de Moidière",
+   "Parc de Fallavier",
+   "Château de Fallavier",
+   "Chèzeneuve"
+  ],
+  "formules": [
+   "mi",
+   "journee"
+  ],
+  "image": "fallavier-chateau",
+  "cadrage": "50% 40%",
+  "vignettes": [
+   {
+    "image": "moidiere-daims",
+    "legende": "Le parc animalier de Moidière"
+   },
+   {
+    "image": "panorama",
+    "legende": "La campagne du Nord-Isère"
+   }
+  ]
+ },
+ {
+  "id": "cremieu",
+  "nom": "Village des brocanteurs et Crémieu",
+  "court": "Brocanteurs et Crémieu",
+  "km": 63,
+  "max": false,
+  "accroche": "Des trouvailles, puis des remparts",
+  "texte": "Visite du village des brocanteurs, puis découverte de la ville médiévale de Crémieu et de ses remparts.",
+  "etapes": [
+   "Chèzeneuve",
+   "Bourgoin-Jallieu",
+   "Village des brocanteurs",
+   "Crémieu",
+   "Trept",
+   "Saint-Savin",
+   "Chèzeneuve"
+  ],
+  "formules": [
+   "mi",
+   "journee"
+  ],
+  "image": "cremieu-rue",
+  "cadrage": "50% 35%",
+  "vignettes": [
+   {
+    "image": "cremieu-rue",
+    "legende": "Une ruelle de Crémieu"
+   },
+   {
+    "image": "brocanteurs-hangar",
+    "legende": "Un avion sur le toit"
+   },
+   {
+    "image": "cremieu-cloitre",
+    "legende": "Un cloître à Crémieu"
+   }
+  ],
+  "grande": "brocanteurs-enseigne",
+  "cadrageGrande": "50% 30%"
+ },
+ {
+  "id": "libre",
+  "nom": "Itinéraire libre",
+  "court": "Itinéraire libre",
+  "km": 70,
+  "max": true,
+  "accroche": "La route est à vous !",
+  "texte": "Vous choisissez votre trajet, dans la limite de 70 km.",
+  "etapes": [],
+  "formules": [
+   "demi",
+   "mi",
+   "journee"
+  ],
+  "image": "grok/g-route-libre",
+  "cadrage": "50% 50%",
+  "vignettes": []
+ }
+]

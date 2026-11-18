@@ -1,0 +1,9 @@
+[
+  { "q": "Qui peut louer une mobylette ?", "r": "La location est réservée aux personnes de plus de 18 ans." },
+  { "q": "Y a-t-il une caution ?", "r": "Oui : 600 € par mobylette." },
+  { "q": "Les mobylettes sont-elles assurées ?", "r": "Oui, elles sont couvertes par des assurances. On vous demande simplement d'en prendre soin et de conduire de façon responsable." },
+  { "q": "Faut-il venir avec son casque ?", "r": "Non : casques et gants sont fournis." },
+  { "q": "Combien de mobylettes peut-on louer ?", "r": "Cinq mobylettes sont disponibles, selon la demande et le planning." },
+  { "q": "Peut-on choisir son propre parcours ?", "r": "Oui, avec l'itinéraire libre : 70 km maximum, à la demi-journée, à la mi-journée ou à la journée." },
+  { "q": "Comment réserver ?", "r": "Par téléphone au 06 82 38 21 43 ou par e-mail à jplocmob@gmail.com." }
+]
